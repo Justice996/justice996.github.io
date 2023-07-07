@@ -49,3 +49,9 @@ jobs:
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: Justice996/justice996.github.io
+          # 推送的分支
+          publish_branch: gh-pages
+          # 推送的内容
+          publish_dir: docs/.vuepress/dist
+

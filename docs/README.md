@@ -1,13 +1,15 @@
 ---
 home: true
-actionText: 进入文档 →
-actionLink: /guide/
+actions:
+  - text: 进入首页 →
+    link: /guide/
+    type: primary
 features:
 - title: 生活
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助写作，更加专注与内容的编写。
+  details: life
 - title: 技术
-  details: 每个页面都预渲染生成静态的 HTML，在页面被加载的时候，将作为 SPA 运行，具有更好的性能和更快速的体验。
+  details: javascript、vue、typescript
 - title: 娱乐
-  details: 响应式页面，能够兼容多种设备666，实现相同的浏览体验。
-footer: Be yourself the happiest | Copyright © 2023
+  details: 玩玩游戏
+footer: Be Justice | Copyright © 2023
 ---

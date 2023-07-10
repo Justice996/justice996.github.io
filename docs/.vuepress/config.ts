@@ -8,6 +8,7 @@ export default defineUserConfig({
     description: '这是我的第一个 VuePress 站点',
     theme:defaultTheme({
         repo: 'https://github.com/Justice996',
+        editLink:false,
         sidebar: [
             // 侧边栏
             {
@@ -15,12 +16,10 @@ export default defineUserConfig({
                 children: [
                     // SidebarItem
                     {
-                        text: '层级1',
+                        text: 'javascript',
                         link: '/foo/bar.md',
                         children: [],
                     },
-                    // 字符串 - 页面文件路径
-                    '/foo/bar.md',
                 ],
             },
             {
@@ -29,11 +28,11 @@ export default defineUserConfig({
                 children: [
                     // SidebarItem
                     {
-                        text: 'github',
+                        text: '整活',
                         children: [],
                     },
                     // 字符串 - 页面文件路径
-                    '/foo/bar.md',
+                    // '/foo/bar.md',
                 ],
             },  {
                 text: '娱乐',

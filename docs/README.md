@@ -11,5 +11,5 @@ features:
   details: javascript、vue、typescript
 - title: 娱乐
   details: 玩玩游戏
-footer: Be Justice | Copyright © 2023
+footer: By Justice | Copyright © 2023
 ---

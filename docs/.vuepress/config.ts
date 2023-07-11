@@ -24,7 +24,13 @@ export default defineUserConfig({
                     {
                         text: 'php',
                         link: '/skill/php/',
-                        children: [],
+                        children: [
+                            {
+                                text: '关联表 一对多',
+                                link: '/skill/php/search.md',
+                                children: [],
+                            },
+                        ],
                     },
                     {
                         text: '运维',
@@ -58,6 +64,7 @@ export default defineUserConfig({
                     // SidebarItem
                     {
                         text: '整活',
+                        link: '/life/',
                         children: [],
                     },
                     // 字符串 - 页面文件路径
@@ -69,6 +76,7 @@ export default defineUserConfig({
                     // SidebarItem
                     {
                         text: '饥荒',
+                        link: '/game/dontStrave.md',
                     },
                     {
                         text: '怀旧游戏机',

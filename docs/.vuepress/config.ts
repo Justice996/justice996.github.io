@@ -5,7 +5,7 @@ import { defaultTheme } from 'vuepress'
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'justice的博客',
-    description: '这是我的第一个 VuePress 站点',
+    description: ' ',
     theme:defaultTheme({
         repo: 'https://github.com/Justice996',
         editLink:false,
@@ -13,18 +13,47 @@ export default defineUserConfig({
             // 侧边栏
             {
                 text: '技术',
+                link: '/skill/',
                 children: [
                     // SidebarItem
                     {
                         text: 'javascript',
-                        link: '/foo/bar.md',
+                        link: '/skill/js/js.md',
+                        children: [],
+                    },
+                    {
+                        text: 'php',
+                        link: '/skill/php/',
+                        children: [],
+                    },
+                    {
+                        text: '运维',
+                        children: [
+                            {
+                                text: '宝塔面板',
+                                link: '/skill/DevOps/btUse.md',
+                            },
+                        ],
+                    },
+                    {
+                        text: 'git',
+                        children: [
+                            {
+                                text: 'git基本使用',
+                                link: '/skill/git/gitBasic.md',
+                                children: [],
+                            },
+                        ],
+                    },
+                    {
+                        text: '如何清除前端缓存',
+                        link: '/skill/js/clean.md',
                         children: [],
                     },
                 ],
             },
             {
                 text: '生活',
-                link: '/foo/',
                 children: [
                     // SidebarItem
                     {
@@ -36,11 +65,14 @@ export default defineUserConfig({
                 ],
             },  {
                 text: '娱乐',
-                link: '/foo/',
                 children: [
                     // SidebarItem
                     {
                         text: '饥荒',
+                    },
+                    {
+                        text: '怀旧游戏机',
+                        link: 'http://yx.1dly.cn/',
                     },
                 ],
             },

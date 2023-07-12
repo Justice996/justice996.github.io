@@ -30,6 +30,16 @@ export default defineUserConfig({
                                 link: '/skill/php/search.md',
                                 children: [],
                             },
+                            {
+                                text: 'tp',
+                                link: '/skill/php/tp.md',
+                                children: [],
+                            },
+                            {
+                                text: 'php基础',
+                                link: '/skill/php/basic.md',
+                                children: [],
+                            },
                         ],
                     },
                     {

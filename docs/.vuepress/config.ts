@@ -9,6 +9,9 @@ export default defineUserConfig({
     theme:defaultTheme({
         repo: 'https://github.com/Justice996',
         editLink:false,
+        contributors:false,
+        backToHome:'返回首页',
+        lastUpdatedText:'最后更新时间',
         sidebar: [
             // 侧边栏
             {
@@ -95,5 +98,6 @@ export default defineUserConfig({
                 ],
             },
         ],
-    })
+    }),
+
 })

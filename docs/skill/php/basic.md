@@ -1,11 +1,11 @@
 ## php基础
-获取代码执行时间
-$stime=microtime(true); 
-中间是代码运行逻辑
-$etime=microtime(true);//获取程序执行结束的时间
-$total=$etime-$stime;   //计算差值
-echo "<br />当前页面执行时间为：{$total} 秒";
-用于调试性能
+获取代码执行时间:<br>
+>$stime=microtime(true);<br>
+中间是代码运行逻辑<br>
+$etime=microtime(true);//获取程序执行结束的时间<br>
+$total=$etime-$stime;  //计算差值
+echo "<br />当前页面执行时间为：{$total} 秒";<br>
+可以用于调试性能
 
  ---
 
@@ -41,7 +41,7 @@ $ip=get_client_ip();
 
 ---
 
-统局 判断 PHP 接口当前域名是http还是https
+判断 PHP 接口当前域名是http还是https
 ```php
 $http_type = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) 
 && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';

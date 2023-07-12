@@ -8,6 +8,9 @@ devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-beta.64
     version: registry.npmmirror.com/@vuepress/client@2.0.0-beta.64
+  '@vuepress/plugin-search':
+    specifier: 2.0.0-beta.66
+    version: registry.npmmirror.com/@vuepress/plugin-search@2.0.0-beta.66
   vue:
     specifier: ^3.3.4
     version: registry.npmmirror.com/vue@3.3.4
@@ -670,6 +673,20 @@ packages:
       - '@vue/composition-api'
     dev: true
 
+  registry.npmmirror.com/@vuepress/client@2.0.0-beta.66:
+    resolution: {integrity: sha512-WjrL1u0NOVUwiGoVOIfQqSU7SwzJUkyBFu3xiZoNmWFD9VdPIfuSRvVeZDhr+br/0tA7XrJd2ueSEDt5+BM3Qg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/client/-/client-2.0.0-beta.66.tgz}
+    name: '@vuepress/client'
+    version: 2.0.0-beta.66
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api@6.5.0
+      '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.66
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core@10.2.1(vue@3.3.4)
+      vue: registry.npmmirror.com/vue@3.3.4
+      vue-router: registry.npmmirror.com/vue-router@4.2.4(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: true
+
   registry.npmmirror.com/@vuepress/core@2.0.0-beta.64:
     resolution: {integrity: sha512-XbYeOwLL6cwTXG3orj2G4tD7EBhNbUpsx/NV/GPSJZk09fZIxmkA/GyNvb7wDvhg1npqCO6hanDu52FkLvT5bw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/core/-/core-2.0.0-beta.64.tgz}
     name: '@vuepress/core'
@@ -679,6 +696,21 @@ packages:
       '@vuepress/markdown': registry.npmmirror.com/@vuepress/markdown@2.0.0-beta.64
       '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.64
       '@vuepress/utils': registry.npmmirror.com/@vuepress/utils@2.0.0-beta.64
+      vue: registry.npmmirror.com/vue@3.3.4
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+    dev: true
+
+  registry.npmmirror.com/@vuepress/core@2.0.0-beta.66:
+    resolution: {integrity: sha512-CPvm6BR5zpvKeky9Z9QbAzsDHTrrxEXFKvN5MUsdEKUTPfoumI1dDT2O6eQS37X9jNB+6mckFaPWKQncbaW1Bg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/core/-/core-2.0.0-beta.66.tgz}
+    name: '@vuepress/core'
+    version: 2.0.0-beta.66
+    dependencies:
+      '@vuepress/client': registry.npmmirror.com/@vuepress/client@2.0.0-beta.66
+      '@vuepress/markdown': registry.npmmirror.com/@vuepress/markdown@2.0.0-beta.66
+      '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.66
+      '@vuepress/utils': registry.npmmirror.com/@vuepress/utils@2.0.0-beta.66
       vue: registry.npmmirror.com/vue@3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -702,6 +734,31 @@ packages:
       '@types/markdown-it-emoji': registry.npmmirror.com/@types/markdown-it-emoji@2.0.2
       '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.64
       '@vuepress/utils': registry.npmmirror.com/@vuepress/utils@2.0.0-beta.64
+      markdown-it: registry.npmmirror.com/markdown-it@13.0.1
+      markdown-it-anchor: registry.npmmirror.com/markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
+      markdown-it-emoji: registry.npmmirror.com/markdown-it-emoji@2.0.2
+      mdurl: registry.npmmirror.com/mdurl@1.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  registry.npmmirror.com/@vuepress/markdown@2.0.0-beta.66:
+    resolution: {integrity: sha512-Zj4THYy6qsw3S9ROoNRy+o4i/4WyYhXKsDEM1v0N0/WJ0DMeHZORDlBPnq7dKwEqtyv42iLz9D2SYI7T3ADs/A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/markdown/-/markdown-2.0.0-beta.66.tgz}
+    name: '@vuepress/markdown'
+    version: 2.0.0-beta.66
+    dependencies:
+      '@mdit-vue/plugin-component': registry.npmmirror.com/@mdit-vue/plugin-component@0.12.0
+      '@mdit-vue/plugin-frontmatter': registry.npmmirror.com/@mdit-vue/plugin-frontmatter@0.12.0
+      '@mdit-vue/plugin-headers': registry.npmmirror.com/@mdit-vue/plugin-headers@0.12.0
+      '@mdit-vue/plugin-sfc': registry.npmmirror.com/@mdit-vue/plugin-sfc@0.12.0
+      '@mdit-vue/plugin-title': registry.npmmirror.com/@mdit-vue/plugin-title@0.12.0
+      '@mdit-vue/plugin-toc': registry.npmmirror.com/@mdit-vue/plugin-toc@0.12.0
+      '@mdit-vue/shared': registry.npmmirror.com/@mdit-vue/shared@0.12.0
+      '@mdit-vue/types': registry.npmmirror.com/@mdit-vue/types@0.12.0
+      '@types/markdown-it': registry.npmmirror.com/@types/markdown-it@12.2.3
+      '@types/markdown-it-emoji': registry.npmmirror.com/@types/markdown-it-emoji@2.0.2
+      '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.66
+      '@vuepress/utils': registry.npmmirror.com/@vuepress/utils@2.0.0-beta.66
       markdown-it: registry.npmmirror.com/markdown-it@13.0.1
       markdown-it-anchor: registry.npmmirror.com/markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
       markdown-it-emoji: registry.npmmirror.com/markdown-it-emoji@2.0.2
@@ -842,6 +899,23 @@ packages:
       - supports-color
     dev: true
 
+  registry.npmmirror.com/@vuepress/plugin-search@2.0.0-beta.66:
+    resolution: {integrity: sha512-OeAaTOBnBwIH1xyleyHGOVjgJNdGvbCPocNbnJOAjTaV6K5FeNgBlX338Kqw0adu2E4DK90UapYDmiXZH/BLAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.66.tgz}
+    name: '@vuepress/plugin-search'
+    version: 2.0.0-beta.66
+    dependencies:
+      '@vuepress/client': registry.npmmirror.com/@vuepress/client@2.0.0-beta.66
+      '@vuepress/core': registry.npmmirror.com/@vuepress/core@2.0.0-beta.66
+      '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.66
+      '@vuepress/utils': registry.npmmirror.com/@vuepress/utils@2.0.0-beta.66
+      chokidar: registry.npmmirror.com/chokidar@3.5.3
+      vue: registry.npmmirror.com/vue@3.3.4
+      vue-router: registry.npmmirror.com/vue-router@4.2.4(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+    dev: true
+
   registry.npmmirror.com/@vuepress/plugin-theme-data@2.0.0-beta.64:
     resolution: {integrity: sha512-37AZuWIfK7eVCTfRuB96XQTyPklGWEev6Q4sut6olUs5lmjidkz2X64kAOw0N2at1yg+nK6eO7UN0sBcLj9oaw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/plugin-theme-data/-/plugin-theme-data-2.0.0-beta.64.tgz}
     name: '@vuepress/plugin-theme-data'
@@ -862,6 +936,15 @@ packages:
     resolution: {integrity: sha512-8Wql71fhUrPXXke96ekev7ul/NTzaG1Y1UYUeblivqNTutVpyLbbIt9AxCZAwkrDr8NTmjapyyNdJIvnwLTVQw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/shared/-/shared-2.0.0-beta.64.tgz}
     name: '@vuepress/shared'
     version: 2.0.0-beta.64
+    dependencies:
+      '@mdit-vue/types': registry.npmmirror.com/@mdit-vue/types@0.12.0
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
+    dev: true
+
+  registry.npmmirror.com/@vuepress/shared@2.0.0-beta.66:
+    resolution: {integrity: sha512-hMnFFHee6xLYVcSdpbKddcqunrOxIp2/B1gOGorcF5bZfnhJJWWsdZ//kwemAqlB8d10Z7f3x+b69Ur1LDPThw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/shared/-/shared-2.0.0-beta.66.tgz}
+    name: '@vuepress/shared'
+    version: 2.0.0-beta.66
     dependencies:
       '@mdit-vue/types': registry.npmmirror.com/@mdit-vue/types@0.12.0
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
@@ -909,6 +992,26 @@ packages:
       '@types/fs-extra': registry.npmmirror.com/@types/fs-extra@11.0.1
       '@types/hash-sum': registry.npmmirror.com/@types/hash-sum@1.0.0
       '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.64
+      debug: registry.npmmirror.com/debug@4.3.4
+      fs-extra: registry.npmmirror.com/fs-extra@11.1.1
+      globby: registry.npmmirror.com/globby@13.2.2
+      hash-sum: registry.npmmirror.com/hash-sum@2.0.0
+      ora: registry.npmmirror.com/ora@6.3.1
+      picocolors: registry.npmmirror.com/picocolors@1.0.0
+      upath: registry.npmmirror.com/upath@2.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  registry.npmmirror.com/@vuepress/utils@2.0.0-beta.66:
+    resolution: {integrity: sha512-CcgSG7ewI20iTdu1WCtQEBJiHfUgsGMg4TB4rActe9gPx8ZRoxZ8Jhr6bO3a4SU789PSBUzF7RYm9E1MtzATHg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/utils/-/utils-2.0.0-beta.66.tgz}
+    name: '@vuepress/utils'
+    version: 2.0.0-beta.66
+    dependencies:
+      '@types/debug': registry.npmmirror.com/@types/debug@4.1.8
+      '@types/fs-extra': registry.npmmirror.com/@types/fs-extra@11.0.1
+      '@types/hash-sum': registry.npmmirror.com/@types/hash-sum@1.0.0
+      '@vuepress/shared': registry.npmmirror.com/@vuepress/shared@2.0.0-beta.66
       debug: registry.npmmirror.com/debug@4.3.4
       fs-extra: registry.npmmirror.com/fs-extra@11.1.1
       globby: registry.npmmirror.com/globby@13.2.2

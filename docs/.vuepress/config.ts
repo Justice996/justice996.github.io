@@ -20,9 +20,31 @@ export default defineUserConfig({
                 children: [
                     // SidebarItem
                     {
-                        text: 'javascript',
+                        text: '前端',
                         link: '/skill/js/js.md',
-                        children: [],
+                        children: [
+                            {
+                                text: '如何清除前端缓存',
+                                link: '/skill/js/clean.md',
+                                children: [],
+                            },
+                            {
+                                text: '$forceUpdate详解',
+                                link: '/skill/js/forceUpdate.md',
+                                children: [],
+                            },
+                        ],
+                    },
+                    {
+                        text: '企业微信开发',
+                        link: '/skill/wecom',
+                        children: [
+                            {
+                                text: '如何配置本地开发环境?',
+                                link: '/skill/wecom/configuration.md',
+
+                            },
+                        ],
                     },
                     {
                         text: 'php',
@@ -63,11 +85,6 @@ export default defineUserConfig({
                                 children: [],
                             },
                         ],
-                    },
-                    {
-                        text: '如何清除前端缓存',
-                        link: '/skill/js/clean.md',
-                        children: [],
                     },
                 ],
             },

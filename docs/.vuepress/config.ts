@@ -17,9 +17,15 @@ export default defineUserConfig({
     theme:defaultTheme({
         repo: 'https://github.com/Justice996',
         editLink:false,
-        contributors:false,
-        backToHome:'返回首页',
-        lastUpdatedText:'最后更新时间',
+        notFound: [
+            '这里什么都没有',
+            '我们怎么到这来了？',
+            '这是一个 404 页面',
+            '看起来我们进入了错误的链接',
+        ],
+        backToHome: '返回首页',
+        lastUpdatedText: '上次更新',
+        contributorsText: '贡献者',
         sidebar: [
             // 侧边栏
             {
@@ -51,6 +57,16 @@ export default defineUserConfig({
                                 text: '如何配置本地开发环境?',
                                 link: '/skill/wecom/configuration.md',
 
+                            },
+                        ],
+                    },
+                    {
+                        text: '微信公众号开发',
+                        link: '/skill/wechat',
+                        children: [
+                            {
+                                text: '扫二维码关注公众号并获取用户-逻辑?',
+                                link: '/skill/wechat/basic.md',
                             },
                         ],
                     },

@@ -1,11 +1,19 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'justice的博客',
     description: ' ',
+    plugins: [
+        docsearchPlugin({
+            appId:'JP2DLPFM6S',
+            apiKey:'dd1f89db01cf75dfb57af6cb7878f9f7',
+            indexName:'justice996io',
+        }),
+    ],
     theme:defaultTheme({
         repo: 'https://github.com/Justice996',
         editLink:false,

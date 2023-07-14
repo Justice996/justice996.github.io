@@ -62,7 +62,6 @@ export default defineUserConfig({
                     },
                     {
                         text: '微信公众号开发',
-                        link: '/skill/wechat',
                         children: [
                             {
                                 text: '扫二维码关注公众号并获取用户-逻辑?',

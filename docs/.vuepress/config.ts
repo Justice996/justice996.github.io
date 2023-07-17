@@ -120,6 +120,11 @@ export default defineUserConfig({
                         link: '/life/',
                         children: [],
                     },
+                    {
+                        text: '整了台ipad',
+                        link: '/life/ipad.md',
+                        children: [],
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

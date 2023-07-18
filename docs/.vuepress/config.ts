@@ -17,6 +17,12 @@ export default defineUserConfig({
     theme:defaultTheme({
         repo: 'https://github.com/Justice996',
         editLink:false,
+        navbar:[
+            {
+                text: '友情链接',
+                link: '/friends.md',
+            },
+        ],
         notFound: [
             '这里什么都没有',
             '我们怎么到这来了？',

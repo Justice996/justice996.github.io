@@ -44,6 +44,10 @@ export default defineUserConfig({
                         link: '/skill/js/js.md',
                         children: [
                             {
+                                text:'前端面试题',
+                                link:'/skill/js/interview.md'
+                            },
+                            {
                                 text: '如何清除前端缓存',
                                 link: '/skill/js/clean.md',
                                 children: [],

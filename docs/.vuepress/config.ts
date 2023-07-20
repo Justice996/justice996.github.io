@@ -135,6 +135,11 @@ export default defineUserConfig({
                         link: '/life/ipad.md',
                         children: [],
                     },
+                    {
+                        text: '杂谈',
+                        link: '/life/thinks.md',
+                        children: [],
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

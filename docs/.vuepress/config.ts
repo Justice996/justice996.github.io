@@ -140,6 +140,10 @@ export default defineUserConfig({
                         link: '/life/thinks.md',
                         children: [],
                     },
+                    {
+                        text: '寻找',
+                        link: '/life/seek.md',
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

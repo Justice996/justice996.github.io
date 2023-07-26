@@ -147,7 +147,12 @@ export default defineUserConfig({
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],
-            },  {
+            },
+            {
+                text:'学英语',
+                link: '/english/',
+            },
+            {
                 text: '娱乐',
                 children: [
                     // SidebarItem

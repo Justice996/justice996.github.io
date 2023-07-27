@@ -153,6 +153,16 @@ export default defineUserConfig({
                 link: '/english/',
             },
             {
+                text:'阅读',
+                link: '/read/',
+                children: [
+                    {
+                        text: '<<世界尽头的咖啡馆>>',
+                        link: '/read/TheCafeattheEndoftheWorld.md',
+                    },
+                ]
+            },
+            {
                 text: '娱乐',
                 children: [
                     // SidebarItem

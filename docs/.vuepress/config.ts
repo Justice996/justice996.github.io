@@ -160,6 +160,11 @@ export default defineUserConfig({
                         text: '<<世界尽头的咖啡馆>>',
                         link: '/read/TheCafeattheEndoftheWorld.md',
                     },
+                    {
+                        text: '<<生活的艺术家>>',
+                        link: '/read/artistsOfLife.md',
+
+                    }
                 ]
             },
             {

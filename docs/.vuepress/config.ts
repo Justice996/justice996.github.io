@@ -163,7 +163,10 @@ export default defineUserConfig({
                     {
                         text: '<<生活的艺术家>>',
                         link: '/read/artistsOfLife.md',
-
+                    },
+                    {
+                        text: '<<计算机是怎样跑起来的>>',
+                        link: '/read/howComputersWork.md',
                     }
                 ]
             },

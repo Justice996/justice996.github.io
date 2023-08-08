@@ -144,6 +144,10 @@ export default defineUserConfig({
                         text: '寻找',
                         link: '/life/seek.md',
                     },
+                    {
+                        text: '25岁生日',
+                        link: '/life/birthday25.md',
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

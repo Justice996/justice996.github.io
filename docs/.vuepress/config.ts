@@ -5,13 +5,13 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
     lang: 'zh-CN',
-    title: 'justice的博客',
+    title: 'Justice的博客',
     description: '我在感觉良好的状态下进行改变，效果最佳。',
     plugins: [
         docsearchPlugin({
             appId:'JP2DLPFM6S',
             apiKey:'dd1f89db01cf75dfb57af6cb7878f9f7',
-            indexName:'justice996io',
+            indexName:'Justice996io',
         }),
     ],
     theme:defaultTheme({
@@ -160,6 +160,10 @@ export default defineUserConfig({
                 text:'阅读',
                 link: '/read/',
                 children: [
+                    {
+                        text: '<<硅谷钢铁侠：埃隆·马斯克的冒险人生>>',
+                        link: '/read/ElonReeveMuskBiography.md',
+                    },
                     {
                         text: '<<世界尽头的咖啡馆>>',
                         link: '/read/TheCafeattheEndoftheWorld.md',

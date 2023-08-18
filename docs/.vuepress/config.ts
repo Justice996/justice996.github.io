@@ -80,17 +80,6 @@ export default defineUserConfig({
                         ],
                     },
                     {
-                        text: 'ai',
-                        link: '/skill/ai/',
-                        children: [
-                            {
-                                text: 'ai',
-                                link: '/skill/ai/ai.md',
-                                children: [],
-                            },
-                        ],
-                    },
-                    {
                         text: 'php',
                         link: '/skill/php/',
                         children: [

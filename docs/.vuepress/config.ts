@@ -148,6 +148,11 @@ export default defineUserConfig({
                         text: '25岁生日',
                         link: '/life/birthday25.md',
                     },
+                    {
+                        text: '崩溃',
+                        link: '/life/breakdown.md',
+                    },
+
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

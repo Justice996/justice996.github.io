@@ -36,7 +36,7 @@ export default defineUserConfig({
             // 侧边栏
             {
                 text: '技术',
-                link: '/skill/',
+                collapsible:true,
                 children: [
                     // SidebarItem
                     {
@@ -123,6 +123,7 @@ export default defineUserConfig({
             },
             {
                 text: '生活',
+                collapsible:true,
                 children: [
                     // SidebarItem
                     {
@@ -159,11 +160,17 @@ export default defineUserConfig({
             },
             {
                 text:'学英语',
-                link: '/english/',
+                collapsible:true,
+                children: [
+                    {
+                        text:'单词表1',
+                        link: '/english/list1.md',
+                    }
+                    ]
             },
             {
                 text:'阅读',
-                link: '/read/',
+                collapsible:true,
                 children: [
                     {
                         text: '<<硅谷钢铁侠：埃隆·马斯克的冒险人生>>',
@@ -185,6 +192,7 @@ export default defineUserConfig({
             },
             {
                 text: '娱乐',
+                collapsible:true,
                 children: [
                     // SidebarItem
                     {

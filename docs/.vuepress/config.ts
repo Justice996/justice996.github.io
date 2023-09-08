@@ -1,6 +1,10 @@
+// @ts-ignore
 import { defineUserConfig } from 'vuepress'
+// @ts-ignore
 import { defaultTheme } from 'vuepress'
+// @ts-ignore
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 
 export default defineUserConfig({
@@ -12,6 +16,10 @@ export default defineUserConfig({
             appId:'JP2DLPFM6S',
             apiKey:'dd1f89db01cf75dfb57af6cb7878f9f7',
             indexName:'Justice996io',
+        }),
+        commentPlugin({
+            // 插件选项
+            provider: "Giscus",
         }),
     ],
     theme:defaultTheme({

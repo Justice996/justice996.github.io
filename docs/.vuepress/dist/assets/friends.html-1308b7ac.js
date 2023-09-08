@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as r,a as e,b as s}from"./app-cea8d733.js";const c={},n=e("h2",{id:"友情链接",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#友情链接","aria-hidden":"true"},"#"),s(" 友情链接")],-1),o=[n];function _(d,i){return a(),r("div",null,o)}const h=t(c,[["render",_],["__file","friends.html.vue"]]);export{h as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6b7205e1","path":"/skill/js/js.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"什么是js","slug":"什么是js","link":"#什么是js","children":[]}],"git":{"updatedTime":1690453140000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":3}]},"filePathRelative":"skill/js/js.md"}');export{e as data};

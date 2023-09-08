@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-687c04c2","path":"/skill/DevOps/btUse.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"宝塔基本使用","slug":"宝塔基本使用","link":"#宝塔基本使用","children":[]}],"git":{"updatedTime":1689046778000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"skill/DevOps/btUse.md"}');export{e as data};

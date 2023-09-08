@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b13c599c","path":"/life/breakdown.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"崩溃","slug":"崩溃","link":"#崩溃","children":[]}],"git":{"updatedTime":1692844351000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"life/breakdown.md"}');export{e as data};

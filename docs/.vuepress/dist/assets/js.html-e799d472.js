@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as a,a as e,b as c}from"./app-cea8d733.js";const o={},r=e("h2",{id:"什么是js",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#什么是js","aria-hidden":"true"},"#"),c(" 什么是js")],-1),n=[r];function _(d,i){return t(),a("div",null,n)}const l=s(o,[["render",_],["__file","js.html.vue"]]);export{l as default};

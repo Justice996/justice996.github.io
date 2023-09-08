@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "rootDir": "./docs"
+  },
+  "include": [
+    "./src/.vuepress/**/*.ts",
+    "./src/.vuepress/**/*.d.ts",
+    "./src/.vuepress/**/*.vue"
+  ]
+}

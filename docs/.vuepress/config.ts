@@ -125,6 +125,11 @@ export default defineUserConfig({
                                 link: '/skill/git/gitBasic.md',
                                 children: [],
                             },
+                            {
+                                text: 'git配置代理',
+                                link: '/skill/git/gitUsePorxy.md',
+                                children: [],
+                            }
                         ],
                     },
                 ],
@@ -157,10 +162,10 @@ export default defineUserConfig({
                         text: '25岁生日',
                         link: '/life/birthday25.md',
                     },
-                    {
-                        text: '崩溃',
-                        link: '/life/breakdown.md',
-                    },
+                    // {
+                    //     text: '崩溃',
+                    //     link: '/life/breakdown.md',
+                    // },
 
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',

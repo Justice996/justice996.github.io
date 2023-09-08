@@ -10,15 +10,15 @@
 设置代理
 
 ```bash
-   git config --global http.proxy
-   git config --global https.proxy
+   git config --global http.proxy 127.0.0.1:10808
+   git config --global https.proxy 127.0.0.1:10808
 ```
 
 取消代理
 
 ```bash
-   git config --global http.proxy 127.0.0.1:10808
-   git config --global https.proxy 127.0.0.1:10808
+   git config --global --unset http.proxy
+   git config --global --unset https.proxy  
 ```
 
-需要自己有代理，然后才能配置。配置成功后就可以愉快的往github提价代码了！
+需要自己有代理，然后才能配置。配置成功后就可以愉快的往github提交代码了！

@@ -1,7 +1,10 @@
 {
+
   "compilerOptions": {
+    "baseUrl": "./",
     "module": "NodeNext",
-    "rootDir": "./docs"
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true
   },
   "include": [
     "./src/.vuepress/**/*.ts",

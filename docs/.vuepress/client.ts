@@ -1,6 +1,6 @@
 // @ts-ignore
 import { defineClientConfig } from '@vuepress/client'
-import Home from './Layouts/Home.vue'
+// import Home from './Layouts/Home.vue'
 
 // @ts-ignore
 import { defineGiscusConfig } from "vuepress-plugin-comment2/client";
@@ -18,7 +18,7 @@ export default defineClientConfig({
     setup() {},
     rootComponents: [],
     layouts: {
-        Home,
+        // Home,
         Layout,
     }
 })

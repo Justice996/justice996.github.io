@@ -175,6 +175,10 @@ export default defineUserConfig({
                 collapsible:true,
                 children: [
                     {
+                        text:'如何记单词',
+                        link: '/english/howToRememberTheWords.md',
+                    },
+                    {
                         text:'单词表1',
                         link: '/english/list1.md',
                     }

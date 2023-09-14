@@ -10,8 +10,8 @@
 设置代理
 
 ```bash
-   git config --global http.proxy 127.0.0.1:10808
-   git config --global https.proxy 127.0.0.1:10808
+   git config --global http.proxy 127.0.0.1:10809
+   git config --global https.proxy 127.0.0.1:10809
 ```
 
 取消代理

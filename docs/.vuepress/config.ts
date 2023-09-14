@@ -218,6 +218,12 @@ export default defineUserConfig({
                     },
                 ],
             },
+            {text:'树莓派', collapsible:true,children:[
+                    {
+                        text: '树莓派控制二极管灯泡',
+                        link: '/raspberry/diode.md',
+                    },
+                ]}
         ],
     }),
 

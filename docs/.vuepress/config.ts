@@ -6,7 +6,6 @@ import { defaultTheme } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { commentPlugin } from "vuepress-plugin-comment2";
 
-
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'Justice的博客',

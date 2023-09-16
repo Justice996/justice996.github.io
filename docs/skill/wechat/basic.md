@@ -26,8 +26,8 @@ Token验证例子微信扫码<http://demo.616zf.com/api/wx/valid>
 获取用户详细信息
 获取用户详细信息：获取用户详细信息
 程序目录
-![44ae262d901fe79a8ef90a0f96fa21c](https://cdn.staticaly.com/gh/Justice996/picx-images-hosting@master/44ae262d901fe79a8ef90a0f96fa21c.35dqrj1q0ew0.webp)
-![636440686be7d9d63bd5ec76a8645a4](https://cdn.staticaly.com/gh/Justice996/picx-images-hosting@master/636440686be7d9d63bd5ec76a8645a4.6n1dk9el5bc0.webp)
+![44ae262d901fe79a8ef90a0f96fa21c](https://jsd.cdn.zzko.cn/gh/Justice996/picx-images-hosting@master/44ae262d901fe79a8ef90a0f96fa21c.35dqrj1q0ew0.webp)
+![636440686be7d9d63bd5ec76a8645a4](https://jsd.cdn.zzko.cn/gh/Justice996/picx-images-hosting@master/636440686be7d9d63bd5ec76a8645a4.6n1dk9el5bc0.webp)
 ---
 
 ```php

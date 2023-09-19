@@ -47,6 +47,17 @@ export default defineUserConfig({
                 children: [
                     // SidebarItem
                     {
+                        text: '数据结构和算法',
+                        link: '/skill/DataStructureAndalgorithm/README.md',
+                        children: [
+                            {
+                                text: '开始',
+                                link: '/skill/DataStructureAndalgorithm/start.md',
+                                children: [],
+                            }
+                        ],
+                    },
+                    {
                         text: '前端',
                         link: '/skill/js/js.md',
                         children: [

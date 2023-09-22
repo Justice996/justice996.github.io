@@ -135,94 +135,126 @@
                  console.log(stack.size());
        ```
 
-     - 使用js对象实现
-       ```js
-       class Stack {
-       constructor() {
-       this.count = 0;
-       this.items = {};
-       }
-       push(element){
-       this.items[this.count] = element;
-       this.count++;
-       console.log(this.count,this.items);
-       }
-       size(){
-       return this.count;
-       }
-       isEmpty(){
-       return this.count ===0;
-       }
-       pop(){
-       if(this.isEmpty()){return undefined};
-       this.count--;
-       console.log(this.count);
-       const result = this.items[this.count];
-       delete this.items[this.count];
-       return result;
-       }
-       peek(){
-       //访问栈顶元素
-       if(this.isEmpty()){
-       return undefined;
-       }
-       return this.items[this.count - 1];
-       }
-       clear(){
-       // 直接重置
-       this.items ={};
-       this.count = 0;
-       return this.items;
-       }
-       clear1(){
-       // 按照后入先出的方式重置
-       while(this.isEmpty()){
-       this.pop()
-       }
-       console.log(this.items);
-       }
-       toString(){
-       //返回字符串
-       if(this.isEmpty()){
-       return '';
-       }
-       let objString = `${this.items[0]}`;
-       for(let i = 1;i<this.count;i++){
-       objString = `${objString},${this.items[i]}`
-       }
-       return objString;
-       }
-       };
-       const stack = new Stack();
-       stack.push(5);
-       stack.push(8);
-       stack.push(11);
-       stack.push(33);
-    
-           console.log(Object.getOwnPropertyNames(stack));
-           console.log(Object.keys(stack));
-           console.log(stack.items);
-    
-           console.log(stack.toString());
-           // 二进制转换为十进制
-       function decimalToBinary(decNumber){
-         const remStack = new Stack();
-         let number = decNumber;
-         let rem;
-         let binaryString = ''
-    
-         while (number>0){
-           rem = Math.floor(number%2);
-           remStack.push(rem);
-           number = Math.floor(number/2);
+       - 使用js对象实现
+         ```js
+         class Stack {
+         constructor() {
+         this.count = 0;
+         this.items = {};
          }
-         while(!remStack.isEmpty()){
-           binaryString += remStack.pop().toString();
+         push(element){
+         this.items[this.count] = element;
+         this.count++;
+         console.log(this.count,this.items);
          }
-         return binaryString;
-       }
-       console.log(decimalToBinary(233));
-       console.log(decimalToBinary(10));
-       console.log(decimalToBinary(1000));
-       console.log(decimalToBinary(8.1));
-       ```
+         size(){
+         return this.count;
+         }
+         isEmpty(){
+         return this.count ===0;
+         }
+         pop(){
+         if(this.isEmpty()){return undefined};
+         this.count--;
+         console.log(this.count);
+         const result = this.items[this.count];
+         delete this.items[this.count];
+         return result;
+         }
+         peek(){
+         //访问栈顶元素
+         if(this.isEmpty()){
+         return undefined;
+         }
+         return this.items[this.count - 1];
+         }
+         clear(){
+         // 直接重置
+         this.items ={};
+         this.count = 0;
+         return this.items;
+         }
+         clear1(){
+         // 按照后入先出的方式重置
+         while(this.isEmpty()){
+         this.pop()
+         }
+         console.log(this.items);
+         }
+         toString(){
+         //返回字符串
+         if(this.isEmpty()){
+         return '';
+         }
+         let objString = `${this.items[0]}`;
+         for(let i = 1;i<this.count;i++){
+         objString = `${objString},${this.items[i]}`
+         }
+         return objString;
+         }
+         };
+         const stack = new Stack();
+         stack.push(5);
+         stack.push(8);
+         stack.push(11);
+         stack.push(33);
+    
+             console.log(Object.getOwnPropertyNames(stack));
+             console.log(Object.keys(stack));
+             console.log(stack.items);
+    
+             console.log(stack.toString());
+             // 二进制转换为十进制
+         function decimalToBinary(decNumber){
+           const remStack = new Stack();
+           let number = decNumber;
+           let rem;
+           let binaryString = ''
+    
+           while (number>0){
+             rem = Math.floor(number%2);
+             remStack.push(rem);
+             number = Math.floor(number/2);
+           }
+           while(!remStack.isEmpty()){
+             binaryString += remStack.pop().toString();
+           }
+           return binaryString;
+         }
+         console.log(decimalToBinary(233));
+         console.log(decimalToBinary(10));
+         console.log(decimalToBinary(1000));
+         console.log(decimalToBinary(8.1));
+           /***
+             * 在将十进制转成二进制时，余数是0或1；在将十进制转成八进制时，余数是0～7；
+             * 但是将十进制转成十六进制时，余数是0～9加上A、B、C、D、E和F（对应10、11、12、13、14和15）。
+             * 因此，我们需要对栈中的数字做个转化才可以（行{6}和行{7}）。
+             * 因此，从十一进制开始，字母表中的每个字母将表示相应的基数。字母A代表基数11, B代表基数12，以此类推。
+             * 把十进制转换成基数为2～36的任意进制
+           */
+           function baseConverter(decNumber,base){
+           const remStack = new Stack();
+           const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';//{7}
+           let number = decNumber;
+           let rem;
+           let baseString='';
+
+             if(!(base >= 2 && base<=36)){
+               return '';
+             }
+
+             while(number>0){
+               rem = Math.floor(number % base);
+               remStack.push(rem);
+               number = Math.floor(number / base);
+             }
+             while(!remStack.isEmpty()){
+               baseString += digits[remStack.pop()]; //{7}
+             }
+             return baseString;
+         }
+         console.log(baseConverter(100345, 2)); // 11000011111111001
+         console.log(baseConverter(100345, 8)); // 303771
+         console.log(baseConverter(100345, 16)); // 187F9
+         console.log(baseConverter(100345, 35)); // 2BW0
+         ```

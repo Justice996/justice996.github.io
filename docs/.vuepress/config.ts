@@ -54,6 +54,14 @@ export default defineUserConfig({
                                 text: '开始',
                                 link: '/skill/DataStructureAndalgorithm/start.md',
                                 children: [],
+                            },
+                            {
+                                text: '队列',
+                                link: '/skill/DataStructureAndalgorithm/queue.md',
+                            },
+                            {
+                                text: '双端队列',
+                                link: '/skill/DataStructureAndalgorithm/deque.md',
                             }
                         ],
                     },

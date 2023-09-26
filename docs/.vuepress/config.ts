@@ -62,7 +62,11 @@ export default defineUserConfig({
                             {
                                 text: '双端队列',
                                 link: '/skill/DataStructureAndalgorithm/deque.md',
-                            }
+                            },
+                            {
+                                text: '循环队列',
+                                link: '/skill/DataStructureAndalgorithm/loopQueue.md',
+                            },
                         ],
                     },
                     {

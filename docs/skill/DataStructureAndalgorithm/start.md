@@ -80,7 +80,7 @@
    console.table(averageTemp); //它会显示一个更加友好的输出结果
   ```
   5. js数组常用方法
-  ![pic](https://jsd.cdn.zzko.cn/gh/Justice996/picx-images-hosting@master/DataStructureAndalgorithm/1695260589327.kfxpwsgtrl8.webp)
+  ![pic](https://cdn.jsdelivr.net/gh/Justice996/picx-images-hosting@master/DataStructureAndalgorithm/1695260589327.kfxpwsgtrl8.webp)
   6. 数组合并concat方法，concat方法可以向一个数组传递数组、对象或是元素。数组会按照该方法传入的参数顺序连接指定数组。
     ```js
       const zero = 0;
@@ -93,7 +93,7 @@
      every some foreach map fifter reduce
 
    8. ES2015和ES2016新增的数组方法
-      ![1695263963200](https://jsd.cdn.zzko.cn/gh/Justice996/picx-images-hosting@master/DataStructureAndalgorithm/1695263963200.40wce4zodes0.webp)
+      ![1695263963200](https://cdn.jsdelivr.net/gh/Justice996/picx-images-hosting@master/DataStructureAndalgorithm/1695263963200.40wce4zodes0.webp)
 
    9.栈数据结构
      - 使用js数组实现

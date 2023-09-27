@@ -67,6 +67,10 @@ export default defineUserConfig({
                                 text: '循环队列',
                                 link: '/skill/DataStructureAndalgorithm/loopQueue.md',
                             },
+                            {
+                                text: '链表',
+                                link: '/skill/linkedList/linkedList.md',
+                            },
                         ],
                     },
                     {

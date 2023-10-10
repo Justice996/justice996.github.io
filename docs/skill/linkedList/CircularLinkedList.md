@@ -257,5 +257,34 @@
       }
       return false;
     }
+     //循环链表删除元素
+     removeAt(index){
+         // 判断index是否合法
+         if(index>=0 && index<this.count){
+             let current = this.head;
+             //如果要删除的是第一条数据
+             if(index===0){
+                 if(this.size()===1){
+                     //如果链表中只有一条数据
+                     this.head = undefined;
+                 }else{
+                     const removed = this.head;
+                     current = this.getElementAt(this.size()); // 获取链表中最后一条数据
+                     this.head = this.head.next; // 删除第一个元素
+                     current.next = this.head; // 最后一个元素指向新的head
+                     current = removed; //更新current 用来返回被删除元素的值
+                 }
+             } else{
+                 // 如果要删除的是第二条以及往后的数据
+                 //不需要修改循环链表最后一个元素
+                 const previous = this.getElementAt(index-1);
+                 current =previous.next;
+                 previous.next = current.next;
+             }
+             this.count--;
+             return current.element;
+         }
+         return undefined;
+     }
   }
 ```

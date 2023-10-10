@@ -79,6 +79,10 @@ export default defineUserConfig({
                                 text: '循环链表',
                                 link: '/skill/linkedList/CircularLinkedList.md',
                             },
+                            {
+                                text: '有序链表',
+                                link: '/skill/linkedList/SortedLinkedList.md',
+                            },
                         ],
                     },
                     {

@@ -83,6 +83,10 @@ export default defineUserConfig({
                                 text: '有序链表',
                                 link: '/skill/linkedList/SortedLinkedList.md',
                             },
+                            {
+                                text: '集合',
+                                link: '/skill/set/set.md',
+                            },
                         ],
                     },
                     {

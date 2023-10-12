@@ -246,6 +246,10 @@ export default defineUserConfig({
                     {
                         text: '<<计算机是怎样跑起来的>>',
                         link: '/read/howComputersWork.md',
+                    },
+                    {
+                        text: '<<傅雷家书>>节选',
+                        link: '/read/FuLeisletter.md',
                     }
                 ]
             },

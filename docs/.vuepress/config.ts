@@ -87,6 +87,14 @@ export default defineUserConfig({
                                 text: '集合',
                                 link: '/skill/set/set.md',
                             },
+                            {
+                                text: '字典',
+                                link: '/skill/dictionaryAndHashTable/dictionary.md',
+                            },
+                            {
+                                text: '散列表',
+                                link: '/skill/dictionaryAndHashTable/hashTable.md',
+                            },
                         ],
                     },
                     {

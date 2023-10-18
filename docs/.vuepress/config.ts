@@ -95,6 +95,10 @@ export default defineUserConfig({
                                 text: '散列表',
                                 link: '/skill/dictionaryAndHashTable/hashTable.md',
                             },
+                            {
+                                text:'递归',
+                                link: '/skill/recursive/recursive.md',
+                            }
                         ],
                     },
                     {

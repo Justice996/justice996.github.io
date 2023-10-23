@@ -98,6 +98,10 @@ export default defineUserConfig({
                             {
                                 text:'递归',
                                 link: '/skill/recursive/recursive.md',
+                            },
+                            {
+                                text:'树',
+                                link: '/skill/tree/tree.md',
                             }
                         ],
                     },

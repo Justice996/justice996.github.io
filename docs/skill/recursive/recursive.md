@@ -92,5 +92,32 @@
     return fibonacci;
 }
 ```
+循环实现99乘法表
+```javascript
+    for (let i = 1; i <= 9;i++) {
+        let str='';
+        for (let j = 1; j <=i; j++) {
+             
+            str+=`${j}x${i}=${i*j}`+' '
+        }
+        console.log(str);
+      }
+```
+递归实现99乘法表
+```javascript
+    function cf(m=9){
+            if(m==1){
+               console.log('1*1=1');
+            }else{
+               let str='';
+                for (let i =1; i <= m; i++) {
+                   str+=`${i}*${m}=${m*i}`+' ';
+                }
+                cf(m-1);
+                console.log(str);
+            }
+        }
+        cf();
+```
 
 迭代的版本比递归的版本快很多，所以这表示递归更慢。但是，再看看三个不同版本的代码。递归版本更容易理解，需要的代码通常也更少。另外，对一些算法来说，迭代的解法可能不可用，而且有了尾调用优化，递归的多余消耗甚至可能被消除。所以，我们经常使用递归，因为用它来解决问题会更简单。

@@ -195,4 +195,4 @@ console.log(tree.search(1) ? 'Key 1 found.' : 'Key 1 not found.');
 console.log(tree.search(8) ? 'Key 8 found.' : 'Key 8 not found.');
 
 ```
-20231024 实现了二叉搜索树的插入遍历和搜索。
+2023-10-24 实现了二叉搜索树的插入遍历和搜索。

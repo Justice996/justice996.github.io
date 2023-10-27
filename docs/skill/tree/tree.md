@@ -196,3 +196,65 @@ console.log(tree.search(8) ? 'Key 8 found.' : 'Key 8 not found.');
 
 ```
 2023-10-24 实现了二叉搜索树的插入遍历和搜索。
+
+#### AVL树(自平衡树)
+2023-10-27 关于avl的翻转完全没有理解，需要再多看看例子。
+```javascript
+    // 添加或移除节点时，AVL树会尝试保持自平衡。任意一个节点（不论深度）的左子树和右子树高度最多相差1。添加或移除节点时，AVL树会尽可能尝试转换为完全树。
+    class AVLTree extends BinarySearchTree{
+      constructor(compareFn = defaultCompare){
+        super(compareFn);
+        this.compareFn = compareFn;
+        this.root = null;
+      }
+      // 计算节点高度代码
+      getNodeHeight(node){
+        if(node == null){
+          return -1;
+        }
+        return Math.max(this.getNodeHeight(node.left),this.getNodeHeight(node.right))+1;
+      }
+      //计算平衡因子
+      // 在AVL树中，需要对每个节点计算右子树高度（hr）和左子树高度（hl）之间的差值，该值（hr－hl）应为0、1或-1。如果结果不是这三个值之一，则需要平衡该AVL树。(为什么这么定义？)
+   
+      getBalanceFactor(node){
+        const heightDifference = this.getNodeHeight(node.left) - this.getNodeHeight(node.right);
+        switch(heightDifference) {
+          case -2:
+            return BalanceFactor.UNBALANCED_RIGHT;
+          case -1:
+            return BalanceFactor.SLIGHTLY_UNBALANCED_RIGHT;
+          case 1:
+            return BalanceFactor.SLIGHTLY_UNBALANCED_LEFT;
+          case 2:
+            return BalanceFactor.UNBALANCED_LEFT;
+          default:
+            return BalanceFactor.BALANCED;
+        }
+      }
+      // 左-左（LL）：向右的单旋转
+      rotationLL(node){
+        const tmp = node.left; // 与平衡操作相关的节点有三个（X、Y、Z），将节点X置于节点Y（平衡因子为+2）所在的位置（行{1}）；
+        node.left = tem.right; // 将节点Y的左子节点置为节点X的右子节点Z（行{2}）；
+        tmp.right = node; // 将节点X的右子节点置为节点Y
+        return tmp;
+      }
+      //  右-右（RR）：向左的单旋转
+      rotationRR(node){
+        const tmp = node.right;
+        node.right = tmp.left;
+        tmp.left = node;
+        return tmp;
+      }
+      // 左-右（LR）：向右的双旋转
+      rotationLR(node) {
+        node.left = this.rotationRR(node.left);
+        return this.rotationLL(node);
+      }
+      // 右-左（RL）：向左的双旋转
+      rotationRL(node){
+        node.right = this.rotationLL(node.right);
+        return this.rotationRR(node);
+      }
+    }
+```

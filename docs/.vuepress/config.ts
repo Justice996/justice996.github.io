@@ -102,6 +102,10 @@ export default defineUserConfig({
                             {
                                 text:'树',
                                 link: '/skill/tree/tree.md',
+                            },
+                            {
+                                text:'二叉堆',
+                                link: '/binaryHeap/binaryHeap.md',
                             }
                         ],
                     },

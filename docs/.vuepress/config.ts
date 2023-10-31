@@ -224,6 +224,10 @@ export default defineUserConfig({
                         text: '25岁生日',
                         link: '/life/birthday25.md',
                     },
+                    {
+                        text: '投喂流浪猫',
+                        link: '/life/strayCat.md',
+                    },
                     // {
                     //     text: '崩溃',
                     //     link: '/life/breakdown.md',

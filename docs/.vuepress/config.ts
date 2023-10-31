@@ -106,6 +106,10 @@ export default defineUserConfig({
                             {
                                 text:'二叉堆',
                                 link: '/skill/binaryHeap/binaryHeap.md',
+                            },
+                            {
+                                text:'图',
+                                link: '/skill/Graph/graph.md',
                             }
                         ],
                     },

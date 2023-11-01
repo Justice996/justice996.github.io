@@ -10,6 +10,9 @@ export default defineUserConfig({
     lang: 'zh-CN',
     title: 'Justice的博客',
     description: '我在感觉良好的状态下进行改变，效果最佳。',
+    head:[ [
+        'link', { rel: 'icon', href: '/images/favicon.ico' }
+    ]],
     plugins: [
         docsearchPlugin({
             appId:'JP2DLPFM6S',

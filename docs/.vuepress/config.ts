@@ -232,6 +232,10 @@ export default defineUserConfig({
                         text: '投喂流浪猫',
                         link: '/life/strayCat.md',
                     },
+                    {
+                        text: '第二次投喂流浪猫',
+                        link: '/life/strayCat2.md',
+                    },
                     // {
                     //     text: '崩溃',
                     //     link: '/life/breakdown.md',

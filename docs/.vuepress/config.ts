@@ -134,6 +134,11 @@ export default defineUserConfig({
                                 link: '/skill/js/forceUpdate.md',
                                 children: [],
                             },
+                            {
+                                text: 'js中的forEach可以改变原数组吗？',
+                                link: '/skill/js/aboutForEach.md',
+                                children: [],
+                            },
                         ],
                     },
                     {

@@ -252,6 +252,10 @@ export default defineUserConfig({
                         text: '第四次投喂流浪猫',
                         link: '/life/strayCat4.md',
                     },
+                    {
+                        text: '流浪猫变家猫',
+                        link: '/life/strayCatIshomeCat.md',
+                    },
                     // {
                     //     text: '崩溃',
                     //     link: '/life/breakdown.md',

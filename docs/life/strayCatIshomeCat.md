@@ -11,3 +11,5 @@
 周末的时候,之前买的猫窝到了 纯纯智商税，猫还是喜欢睡它的纸板子，进去都不进。  
 惊喜的是他自己会用猫砂盆，虽然我稍微引导了一下。  
 顺便猫屎真的很臭，以前我以为没啥味道。
+
+![0b22fc3eb1b533f7d2426b05d1cebd1](https://cdn.jsdelivr.net/gh/Justice996/picx-images-hosting@master/life/0b22fc3eb1b533f7d2426b05d1cebd1.2mxsttaawic0.webp)

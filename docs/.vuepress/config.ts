@@ -139,6 +139,11 @@ export default defineUserConfig({
                                 link: '/skill/js/aboutForEach.md',
                                 children: [],
                             },
+                            {
+                                text: 'Vue变量中以$或者_开头的变量无法访问',
+                                link: '/skill/js/vueabout$.md',
+                                children: [],
+                            },
                         ],
                     },
                     {

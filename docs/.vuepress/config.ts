@@ -261,6 +261,10 @@ export default defineUserConfig({
                         text: '流浪猫变家猫',
                         link: '/life/strayCatIshomeCat.md',
                     },
+                    {
+                        text: '小橘拉屎在猫砂盆外面',
+                        link: '/life/catpoop.md',
+                    },
                     // {
                     //     text: '崩溃',
                     //     link: '/life/breakdown.md',

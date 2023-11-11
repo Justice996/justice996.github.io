@@ -6,7 +6,7 @@ actions:
     type: primary
 features:
 - title: 生活
-  details: life
+  details: life、养猫
 - title: 技术
   details: javascript、vue、typescript
 - title: 娱乐

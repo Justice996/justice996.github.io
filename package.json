@@ -27,6 +27,7 @@
     "@vuepress/cli": "2.0.0-beta.67",
     "@vuepress/core": "2.0.0-beta.67",
     "@vuepress/theme-default": "2.0.0-beta.67",
+    "axios": "^1.6.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vuepress-theme-hope": "2.0.0-beta.237",
     "vuepress-vite": "2.0.0-beta.67"

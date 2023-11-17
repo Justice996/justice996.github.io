@@ -25,10 +25,10 @@ export default {
 <style lang="scss" scoped>
 .sentenceBox{
   margin-top: 90px;
- text-align: center;
-.author{
-margin-top: 30px;
-}
+  text-align: center;
+    .author{
+    margin-top: 30px;
+    }
 }
 </style>
     

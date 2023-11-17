@@ -17,7 +17,7 @@ export default defineUserConfig({
         docsearchPlugin({
             appId:'JP2DLPFM6S',
             apiKey:'8ff7660a6e94d8542475bf886be9bc39',
-            indexName:'Justice996io',
+            indexName:'justice996io',
         }),
         commentPlugin({
             // 插件选项

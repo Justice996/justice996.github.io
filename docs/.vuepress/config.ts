@@ -144,6 +144,11 @@ export default defineUserConfig({
                                 link: '/skill/js/vueabout$.md',
                                 children: [],
                             },
+                            {
+                                text: '浏览器工作原理',
+                                link: '/skill/js/howBrowersWork.md',
+                                children: [],
+                            },
                         ],
                     },
                     {

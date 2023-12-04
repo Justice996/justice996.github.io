@@ -146,7 +146,7 @@ export default defineUserConfig({
                             },
                             {
                                 text: '浏览器工作原理',
-                                link: '/skill/js/howBrowersWork.md',
+                                link: '/skill/js/howBrowsersWork.md',
                                 children: [],
                             },
                         ],
@@ -217,6 +217,16 @@ export default defineUserConfig({
                         ],
                     },
                 ],
+            },
+            {
+                text:'网络安全',
+                collapsible:true,
+                children: [
+                    {
+                        text:'进攻性安全简介',
+                        link: '/cyberSecurity/whatIsOffensiveSecurity.md',
+                    }
+                    ]
             },
             {
                 text: '生活',

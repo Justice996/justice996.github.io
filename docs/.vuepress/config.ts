@@ -225,7 +225,11 @@ export default defineUserConfig({
                     {
                         text:'进攻性安全简介',
                         link: '/cyberSecurity/whatIsOffensiveSecurity.md',
-                    }
+                    },
+                    {
+                        text:'操作系统安全',
+                        link: '/cyberSecurity/operatingSystemSecurity.md',
+                    },
                     ]
             },
             {

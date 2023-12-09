@@ -230,6 +230,10 @@ export default defineUserConfig({
                         text:'操作系统安全',
                         link: '/cyberSecurity/operatingSystemSecurity.md',
                     },
+                    {
+                        text:'Linux 基础知识第1部分',
+                        link: '/cyberSecurity/LinuxFundamentalsPart1.md',
+                    },
                     ]
             },
             {

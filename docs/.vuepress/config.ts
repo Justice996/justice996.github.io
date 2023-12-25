@@ -234,6 +234,10 @@ export default defineUserConfig({
                         text:'Linux 基础知识第1部分',
                         link: '/cyberSecurity/LinuxFundamentalsPart1.md',
                     },
+                    {
+                        text:'Burp Suite 基本使用',
+                        link: '/cyberSecurity/BurpSuite.md',
+                    },
                     ]
             },
             {

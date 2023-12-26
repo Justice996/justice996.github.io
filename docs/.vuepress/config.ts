@@ -238,6 +238,10 @@ export default defineUserConfig({
                         text:'Burp Suite 基本使用',
                         link: '/cyberSecurity/BurpSuite.md',
                     },
+                     {
+                        text:'被动侦察',
+                        link: '/cyberSecurity/PassiveReconnaissance.md',
+                    },
                     ]
             },
             {

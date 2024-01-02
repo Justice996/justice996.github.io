@@ -246,9 +246,17 @@ export default defineUserConfig({
                         text:'netCat基本使用',
                         link: '/cyberSecurity/netCat.md',
                     },
-                     {
+                    {
+                        text:'Hydra基本使用',
+                        link: '/cyberSecurity/Hydra.md',
+                    },
+                    {
                         text:'被动侦察',
                         link: '/cyberSecurity/PassiveReconnaissance.md',
+                    },
+                    {
+                        text:'协议和服务器',
+                        link: '/cyberSecurity/ProtocolsAndServers.md',
                     },
                     ]
             },

@@ -381,6 +381,10 @@ export default defineUserConfig({
                         text: '树莓派控制二极管灯泡',
                         link: '/raspberry/diode.md',
                     },
+                    {
+                        text: 'nodejs安装',
+                        link: '/raspberry/installNodeJs.md',
+                    },
                 ]}
         ],
     }),

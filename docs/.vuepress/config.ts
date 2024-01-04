@@ -382,7 +382,7 @@ export default defineUserConfig({
                         link: '/raspberry/diode.md',
                     },
                     {
-                        text: 'nodejs安装',
+                        text: '树莓派4B安装nodejs',
                         link: '/raspberry/installNodeJs.md',
                     },
                 ]}

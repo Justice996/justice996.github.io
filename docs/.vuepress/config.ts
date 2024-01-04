@@ -258,6 +258,10 @@ export default defineUserConfig({
                         text:'协议和服务器',
                         link: '/cyberSecurity/ProtocolsAndServers.md',
                     },
+                    {
+                        text:'Metasploit基本使用',
+                        link: '/cyberSecurity/Metasploit.md',
+                    },
                     ]
             },
             {

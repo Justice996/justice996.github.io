@@ -45,25 +45,39 @@ Metasploit Framework：从命令行运行的开源版本。安装在最常用的
     - Post（后期）
      在上述渗透测试过程的最后阶段，后期模块将会很有用。如果希望进一步熟悉这些模块，您可以在 Metasploit 安装的 modules 文件夹下找到它们.   
 
-  5.  Msfconsole 基本命令
-    - `msfconsole` 启动msfconsole
-    - `ls` 列出使用该命令启动 Metasploit 的文件夹的内容
-    - `ping` 发送 ping
-    - `clear` 清除终端屏幕
-    - `help` help 命令可以单独使用，也可以用于特定命令例如`help set`
-    - `history` 查看之前输入的命令
-    - tab 支持制表符补全
-    - `use` 切换上下文 例如`use exploit/windows/smb/ms17_010_eternalblue`,`use` 也可以使用搜索结果行开头的命令后跟数字来选择要使用的模块
-    - `show options` 打印与我们选择的漏洞相关的选项,该show 命令可以在任何上下文中使用，后跟模块类型（辅助、有效负载、漏洞利用等）以列出可用模块。例如`show payloads`,如果在 msfconsole 提示符下使用，该show 命令将列出所有模块。
-    - `back` 离开上下文
-    - `info` 在其上下文中键入命令来获取有关任何模块的更多信息,您可以info 在 msfconsole 提示符下使用后跟模块路径的命令（例如`info exploit/windows/smb/ms17_010_eternalblue`）。信息不是帮助菜单；而是帮助菜单。它将显示模块的详细信息，例如作者、相关来源等
-    - `search` 最有用的命令之一,此命令将在 Metasploit 框架数据库中搜索与给定搜索参数相关的模块。您可以使用 CVE 编号、漏洞名称（eternalblue、heartbleed 等）或目标系统进行搜索，命令的输出 search 提供了每个返回模块的概述。您可能会注意到“名称”列已经提供了比模块名称更多的信息。您可以看到模块的类型（辅助、漏洞利用等）和模块的类别（扫描仪、管理、Windows、Unix 等）。您可以通过命令 use 后跟结果行开头的数字来使用搜索结果中返回的任何模块。（例如use 0 代替use auxiliary/admin/smb/ms17_010_command）
-    - `set PARAMETER_NAME VALUE` 设置参数
-    - `unset` 使用该命令清除任意参数值例如`rhosts`或使用该命令清除所有设置的参数`unset all`
-    - `setg` 设置将用于所有模块的值, 使用方式与 set 命令类似
-    - `unsetg` 清除任何设置的值
-    - `exploit` 启动模块 （该 exploit 命令可以不带任何参数使用，也可以使用“ -z”参数。该exploit -z 命令将在会话打开后立即运行漏洞利用程序并将其置于后台。）
-    - `check` 这将检查目标系统是否容易受到攻击而不利用它
-    - `sessions` 命令来查看现有会话(一旦漏洞被成功利用，就会创建一个会话。这是目标系统和Metasploit之间建立的通信通道。),要与任何会话交互，您可以使用该sessions -i 命令，后跟所需的会话号。(例如:session -i 2)
-    - `background` 使会话提示符后台化并返回到 msfconsole 提示符
+5. Msfconsole 基本命令  
+  
+    - `msfconsole` 启动msfconsole  
+    - `ls` 列出使用该命令启动 Metasploit 的文件夹的内容  
+    - `ping` 发送 ping  
+    - `clear` 清除终端屏幕  
+    - `help` help 命令可以单独使用，也可以用于特定命令例如`help set`  
+    - `history` 查看之前输入的命令  
+    - tab 支持制表符补全  
+    - `use` 切换上下文 例如`use exploit/windows/smb/ms17_010_eternalblue`,`use` 也可以使用搜索结果行开头的命令后跟数字来选择要使用的模块  
+    - `show options` 打印与我们选择的漏洞相关的选项,该show 命令可以在任何上下文中使用，后跟模块类型（辅助、有效负载、漏洞利用等）以列出可用模块。例如`show payloads`,如果在 msfconsole 提示符下使用，该show 命令将列出所有模块。  
+    - `back` 离开上下文  
+    - `info` 在其上下文中键入命令来获取有关任何模块的更多信息,您可以info 在 msfconsole 提示符下使用后跟模块路径的命令（例如`info exploit/windows/smb/ms17_010_eternalblue`）。信息不是帮助菜单；而是帮助菜单。它将显示模块的详细信息，例如作者、相关来源等  
+    - `search` 最有用的命令之一,此命令将在 Metasploit 框架数据库中搜索与给定搜索参数相关的模块。您可以使用 CVE 编号、漏洞名称（eternalblue、heartbleed 等）或目标系统进行搜索，命令的输出 search 提供了每个返回模块的概述。您可能会注意到“名称”列已经提供了比模块名称更多的信息。您可以看到模块的类型（辅助、漏洞利用等）和模块的类别（扫描仪、管理、Windows、Unix 等）。您可以通过命令 use 后跟结果行开头的数字来使用搜索结果中返回的任何模块。（例如use 0 代替use auxiliary/admin/smb/ms17_010_command）  
+    - `set PARAMETER_NAME VALUE` 设置参数  
+    - `unset` 使用该命令清除任意参数值例如`rhosts`或使用该命令清除所有设置的参数`unset all`  
+    - `setg` 设置将用于所有模块的值, 使用方式与 set 命令类似  
+    - `unsetg` 清除任何设置的值  
+    - `exploit` 启动模块 （该 exploit 命令可以不带任何参数使用，也可以使用“ -z”参数。该exploit -z 命令将在会话打开后立即运行漏洞利用程序并将其置于后台。）  
+    - `check` 这将检查目标系统是否容易受到攻击而不利用它  
+    - `sessions` 命令来查看现有会话(一旦漏洞被成功利用，就会创建一个会话。这是目标系统和Metasploit之间建立的通信通道。),要与任何会话交互，您可以使用该sessions -i 命令，后跟所需的会话号。(例如:session -i 2)  
+    - `background` 使会话提示符后台化并返回到 msfconsole 提示符 
 
+6. Metasploit具有数据库功能，可以简化项目管理并避免设置参数值时可能出现的混乱
+  - `systemctl start postgresql` 启动数据库
+  - `msfdb init`  然后初始化 Metasploit 数据库
+  - `db_status` 检查数据库状态(启动 msfconsol后才能使用)
+  - `workspace` 列出可用的工作区(首次启动时，您应该位于默认工作区,`-a`参数添加工作区或使用该参数删除工作区`-d`,切换工作区，workspace后面加工作区的名称。`-h`命令列出该workspace 命令的可用选项)。  
+  - ` db_nmap -sV -p- 10.10.12.229`  如果您使用如下所示运行Nmapdb_nmap扫描，所有结果都将保存到数据库中。  
+  - `hosts`  现在，您可以分别使用和 命令获取与目标系统上运行的主机和服务相关的信息services ,hosts -h和 命令services -h可以帮助您更加熟悉可用的选项,一旦主机信息存储在数据库中，您就可以使用命令`hosts -R `将此值添加到 RHOSTS 参数中。  
+
+7. 工作流程
+  - 我们将使用漏洞扫描模块通过use auxiliary/scanner/smb/smb_ms17_010命令查找潜在的 MS17-010 漏洞。  
+  - 我们使用设置 ROSTS 值hosts -R。
+  - 我们已键入 show options以检查所有值是否已正确分配。（在本例中，10.10.138.32是我们之前使用命令扫描到的IP地址db_nmap）  
+  - 设置完所有参数后，我们使用run or exploit 命令启动漏洞利用程序。

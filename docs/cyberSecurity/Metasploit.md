@@ -80,4 +80,4 @@ Metasploit Framework：从命令行运行的开源版本。安装在最常用的
   - 我们将使用漏洞扫描模块通过use auxiliary/scanner/smb/smb_ms17_010命令查找潜在的 MS17-010 漏洞。  
   - 我们使用设置 ROSTS 值hosts -R。
   - 我们已键入 show options以检查所有值是否已正确分配。（在本例中，10.10.138.32是我们之前使用命令扫描到的IP地址db_nmap）  
-  - 设置完所有参数后，我们使用run or exploit 命令启动漏洞利用程序。
+  - 设置完所有参数后，我们使用 `run` 或者 `exploit` 命令启动漏洞利用程序。

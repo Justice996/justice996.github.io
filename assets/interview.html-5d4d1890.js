@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-775fd227","path":"/skill/js/interview.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"前端面试题","slug":"前端面试题","link":"#前端面试题","children":[]}],"git":{"updatedTime":1690285720000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":2}]},"filePathRelative":"skill/js/interview.md"}');export{e as data};

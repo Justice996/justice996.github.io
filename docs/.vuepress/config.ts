@@ -10,24 +10,24 @@ export default defineUserConfig({
     lang: 'zh-CN',
     title: 'Justice的博客',
     description: '我在感觉良好的状态下进行改变，效果最佳。',
-    head:[ [
+    head: [[
         'link', { rel: 'icon', href: '/images/favicon.ico' }
     ]],
     plugins: [
         docsearchPlugin({
-            appId:'JP2DLPFM6S',
-            apiKey:'8ff7660a6e94d8542475bf886be9bc39',
-            indexName:'justice996io',
+            appId: 'JP2DLPFM6S',
+            apiKey: '8ff7660a6e94d8542475bf886be9bc39',
+            indexName: 'justice996io',
         }),
         commentPlugin({
             // 插件选项
             provider: "Giscus",
         }),
     ],
-    theme:defaultTheme({
+    theme: defaultTheme({
         repo: 'https://github.com/Justice996',
-        editLink:false,
-        navbar:[
+        editLink: false,
+        navbar: [
             {
                 text: '友情链接',
                 link: '/friends.md',
@@ -46,7 +46,7 @@ export default defineUserConfig({
             // 侧边栏
             {
                 text: '技术',
-                collapsible:true,
+                collapsible: true,
                 children: [
                     // SidebarItem
                     {
@@ -99,19 +99,19 @@ export default defineUserConfig({
                                 link: '/skill/dictionaryAndHashTable/hashTable.md',
                             },
                             {
-                                text:'递归',
+                                text: '递归',
                                 link: '/skill/recursive/recursive.md',
                             },
                             {
-                                text:'树',
+                                text: '树',
                                 link: '/skill/tree/tree.md',
                             },
                             {
-                                text:'二叉堆',
+                                text: '二叉堆',
                                 link: '/skill/binaryHeap/binaryHeap.md',
                             },
                             {
-                                text:'图',
+                                text: '图',
                                 link: '/skill/Graph/graph.md',
                             }
                         ],
@@ -121,8 +121,8 @@ export default defineUserConfig({
                         link: '/skill/js/js.md',
                         children: [
                             {
-                                text:'前端面试题',
-                                link:'/skill/js/interview.md'
+                                text: '前端面试题',
+                                link: '/skill/js/interview.md'
                             },
                             {
                                 text: '如何清除前端缓存',
@@ -219,54 +219,54 @@ export default defineUserConfig({
                 ],
             },
             {
-                text:'网络安全',
-                collapsible:true,
+                text: '网络安全',
+                collapsible: true,
                 children: [
                     {
-                        text:'进攻性安全简介',
+                        text: '进攻性安全简介',
                         link: '/cyberSecurity/whatIsOffensiveSecurity.md',
                     },
                     {
-                        text:'操作系统安全',
+                        text: '操作系统安全',
                         link: '/cyberSecurity/operatingSystemSecurity.md',
                     },
                     {
-                        text:'Linux 基础知识第1部分',
+                        text: 'Linux 基础知识第1部分',
                         link: '/cyberSecurity/LinuxFundamentalsPart1.md',
                     },
                     {
-                        text:'Burp Suite 基本使用',
+                        text: 'Burp Suite 基本使用',
                         link: '/cyberSecurity/BurpSuite.md',
                     },
                     {
-                        text:'Nmap 基本使用',
+                        text: 'Nmap 基本使用',
                         link: '/cyberSecurity/Nmap.md',
                     },
                     {
-                        text:'netCat基本使用',
+                        text: 'netCat基本使用',
                         link: '/cyberSecurity/netCat.md',
                     },
                     {
-                        text:'Hydra基本使用',
+                        text: 'Hydra基本使用',
                         link: '/cyberSecurity/Hydra.md',
                     },
                     {
-                        text:'被动侦察',
+                        text: '被动侦察',
                         link: '/cyberSecurity/PassiveReconnaissance.md',
                     },
                     {
-                        text:'协议和服务器',
+                        text: '协议和服务器',
                         link: '/cyberSecurity/ProtocolsAndServers.md',
                     },
                     {
-                        text:'Metasploit基本使用',
+                        text: 'Metasploit基本使用',
                         link: '/cyberSecurity/Metasploit.md',
                     },
-                    ]
+                ]
             },
             {
                 text: '生活',
-                collapsible:true,
+                collapsible: true,
                 children: [
                     // SidebarItem
                     {
@@ -326,22 +326,22 @@ export default defineUserConfig({
                 ],
             },
             {
-                text:'学英语',
-                collapsible:true,
+                text: '学英语',
+                collapsible: true,
                 children: [
                     {
-                        text:'如何记单词',
+                        text: '如何记单词',
                         link: '/english/howToRememberTheWords.md',
                     },
                     {
-                        text:'单词表1',
+                        text: '单词表1',
                         link: '/english/list1.md',
                     }
-                    ]
+                ]
             },
             {
-                text:'阅读',
-                collapsible:true,
+                text: '阅读',
+                collapsible: true,
                 children: [
                     {
                         text: '<<硅谷钢铁侠：埃隆·马斯克的冒险人生>>',
@@ -367,7 +367,7 @@ export default defineUserConfig({
             },
             {
                 text: '娱乐',
-                collapsible:true,
+                collapsible: true,
                 children: [
                     // SidebarItem
                     {
@@ -380,7 +380,8 @@ export default defineUserConfig({
                     },
                 ],
             },
-            {text:'树莓派', collapsible:true,children:[
+            {
+                text: '树莓派', collapsible: true, children: [
                     {
                         text: '树莓派控制二极管灯泡',
                         link: '/raspberry/diode.md',
@@ -389,7 +390,16 @@ export default defineUserConfig({
                         text: '树莓派4B安装nodejs',
                         link: '/raspberry/installNodeJs.md',
                     },
-                ]}
+                ]
+            },
+            {
+                text: '厨艺入门', collapsible: true, children: [
+                    {
+                        text: '',
+                        link: '/cookingSkills/basic.md',
+                    },
+                ]
+            }
         ],
     }),
 

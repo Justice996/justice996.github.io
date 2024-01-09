@@ -316,11 +316,6 @@ export default defineUserConfig({
                         text: '小橘拉屎在猫砂盆外面',
                         link: '/life/catpoop.md',
                     },
-                    // {
-                    //     text: '崩溃',
-                    //     link: '/life/breakdown.md',
-                    // },
-
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],
@@ -395,7 +390,7 @@ export default defineUserConfig({
             {
                 text: '厨艺入门', collapsible: true, children: [
                     {
-                        text: '',
+                        text: '如何选择材料?',
                         link: '/cookingSkills/basic.md',
                     },
                 ]

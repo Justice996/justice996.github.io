@@ -1,4 +1,15 @@
 ## php基础
+
+php输出主机名
+```php
+<?php
+// 获取并输出主机名
+$hostname = php_uname('n');
+echo "Hostname: $hostname";
+?>
+ ```  
+
+ 
 获取代码执行时间:<br>
 >$stime=microtime(true);<br>
 中间是代码运行逻辑<br>

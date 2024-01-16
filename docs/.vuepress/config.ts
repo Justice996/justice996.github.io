@@ -262,6 +262,10 @@ export default defineUserConfig({
                         text: 'Metasploit基本使用',
                         link: '/cyberSecurity/Metasploit.md',
                     },
+                    {
+                        text: 'webshell使用',
+                        link: '/cyberSecurity/webShell.md',
+                    },
                 ]
             },
             {

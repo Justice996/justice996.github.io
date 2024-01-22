@@ -1,6 +1,7 @@
 // @ts-ignore
 import { defineClientConfig } from '@vuepress/client'
 import Home from './Layouts/Home.vue'
+import Snake from './Layouts/Snake.vue'
 
 // @ts-ignore
 import { defineGiscusConfig } from "vuepress-plugin-comment2/client";
@@ -20,5 +21,6 @@ export default defineClientConfig({
     layouts: {
         Home,
         Layout,
+        Snake
     }
 })

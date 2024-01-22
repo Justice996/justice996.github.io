@@ -32,6 +32,10 @@ export default defineUserConfig({
                 text: '友情链接',
                 link: '/friends.md',
             },
+            {
+                text: '贪吃蛇',
+                link: '/snake.md',
+            }
         ],
         notFound: [
             '这里什么都没有',

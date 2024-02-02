@@ -239,6 +239,10 @@ export default defineUserConfig({
                         link: '/cyberSecurity/LinuxFundamentalsPart1.md',
                     },
                     {
+                        text: 'Linux 基础知识第2部分',
+                        link: '/cyberSecurity/LinuxFundamentalsPart2.md',
+                    },
+                    {
                         text: 'Burp Suite 基本使用',
                         link: '/cyberSecurity/BurpSuite.md',
                     },
@@ -269,6 +273,10 @@ export default defineUserConfig({
                     {
                         text: 'webshell使用',
                         link: '/cyberSecurity/webShell.md',
+                    },
+                    {
+                        text: '如何研究问题?(Example Research Question)',
+                        link: '/cyberSecurity/exampleResearchQuestion.md',
                     },
                 ]
             },

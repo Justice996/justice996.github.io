@@ -347,6 +347,10 @@ export default defineUserConfig({
                     {
                         text: '单词表1',
                         link: '/english/list1.md',
+                    },
+                    {
+                        text: '单词表2',
+                        link: '/english/list2.md',
                     }
                 ]
             },

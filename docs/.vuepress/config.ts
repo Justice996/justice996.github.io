@@ -223,6 +223,26 @@ export default defineUserConfig({
                 ],
             },
             {
+              text:'windows相关',
+              collapsible: true,
+              children: [
+                  {
+                      text:'Windows自带工具本地验证文件md5，sha256值',
+                      link:'/windows/checkFIleIntegrity.md'
+                  },
+              ]
+            },
+            {
+                text:'系统架构',
+                collapsible: true,
+                children: [
+                    {
+                        text:'占坑',
+                        link:'/systemStructure/init.md'
+                    },
+                ]
+            },
+            {
                 text: '网络安全',
                 collapsible: true,
                 children: [

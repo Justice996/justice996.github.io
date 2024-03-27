@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-75a8778d","path":"/life/strayCat3.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"投喂流浪猫第三日","slug":"投喂流浪猫第三日","link":"#投喂流浪猫第三日","children":[]}],"git":{"updatedTime":1698919962000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"life/strayCat3.md"}');export{t as data};

@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,a as e,b as n}from"./app-e741dd0f.js";const o={},r=e("h3",{id:"占坑",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#占坑","aria-hidden":"true"},"#"),n(" 占坑")],-1),s=[r];function _(i,d){return a(),c("div",null,s)}const l=t(o,[["render",_],["__file","init.html.vue"]]);export{l as default};

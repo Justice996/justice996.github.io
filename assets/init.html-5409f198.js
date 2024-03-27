@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-773d1ca5","path":"/systemStructure/init.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"占坑","slug":"占坑","link":"#占坑","children":[]}],"git":{"updatedTime":1709863759000,"contributors":[{"name":"陈彦文","email":"chenyanwen9696@xwtec.cn","commits":1}]},"filePathRelative":"systemStructure/init.md"}');export{t as data};

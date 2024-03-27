@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-569e1576","path":"/game/dontStrave.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"饥荒","slug":"饥荒","link":"#饥荒","children":[]}],"git":{"updatedTime":1705976851000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":4}]},"filePathRelative":"game/dontStrave.md"}');export{e as data};

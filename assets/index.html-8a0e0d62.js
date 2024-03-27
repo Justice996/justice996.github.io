@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-14e6315a","path":"/life/","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"自言自语","slug":"自言自语","link":"#自言自语","children":[]}],"git":{"updatedTime":1711506900000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":5}]},"filePathRelative":"life/README.md"}');export{e as data};

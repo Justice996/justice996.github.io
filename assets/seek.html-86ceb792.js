@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d0c7147","path":"/life/seek.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"寻找","slug":"寻找","link":"#寻找","children":[]}],"git":{"updatedTime":1690350531000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":3}]},"filePathRelative":"life/seek.md"}');export{e as data};

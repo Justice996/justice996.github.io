@@ -306,7 +306,7 @@ export default defineUserConfig({
                 children: [
                     // SidebarItem
                     {
-                        text: '整活',
+                        text: '自言自语',
                         link: '/life/',
                         children: [],
                     },
@@ -432,6 +432,10 @@ export default defineUserConfig({
                     {
                         text: '如何选择材料?',
                         link: '/cookingSkills/basic.md',
+                    },
+                    {
+                        text: '已经做过的菜',
+                        link: '/cookingSkills/menu.md',
                     },
                 ]
             }

@@ -35,7 +35,11 @@ export default defineUserConfig({
             {
                 text: '贪吃蛇',
                 link: '/snake.md',
-            }
+            },
+            {
+                text: '今天吃什么',
+                link: '/howtoeat.md',
+            },
         ],
         notFound: [
             '这里什么都没有',

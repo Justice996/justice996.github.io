@@ -356,6 +356,12 @@ export default defineUserConfig({
                         text: '小橘拉屎在猫砂盆外面',
                         link: '/life/catpoop.md',
                     },
+                    {
+                        text: '2024520',
+                        link: '/life/LoveDay.md',
+                    },
+
+
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

@@ -360,8 +360,10 @@ export default defineUserConfig({
                         text: '2024520',
                         link: '/life/LoveDay.md',
                     },
-
-
+                    {
+                        text: '0522随笔',
+                        link: '/life/Journal0522.md',
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

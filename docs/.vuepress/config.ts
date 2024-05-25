@@ -364,6 +364,12 @@ export default defineUserConfig({
                         text: '0522随笔',
                         link: '/life/Journal0522.md',
                     },
+                    {
+                        text: '如何提高创造力?',
+                        link: '/life/HowToImproveCreativity.md',
+                    },
+
+
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

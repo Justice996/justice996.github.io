@@ -368,8 +368,10 @@ export default defineUserConfig({
                         text: '如何提高创造力?',
                         link: '/life/HowToImproveCreativity.md',
                     },
-
-
+                    {
+                        text: '关于我',
+                        link: '/life/aboutMe.md',
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

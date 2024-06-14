@@ -15,6 +15,7 @@ collisionCanvas.height=window.innerHeight;
 let score = 0;
 // 游戏结束状态
 let gameOver = false;
+//全局字体大小
 ctx.font = '50px Impact'
 
 
@@ -55,13 +56,8 @@ class Raven{
         this.randomColors = [Math.floor(Math.random()*255),Math.floor(Math.random()*255),Math.floor(Math.random()*255)];
         this.color = `rgb(${this.randomColors[0]},${this.randomColors[1]},${this.randomColors[2]})`
 
+        this.hasTrail =Math.random() >0.5;
 
-        this.timer=0;
-        // 随机生成旋转角度
-        this.angle = Math.random()*6.2;
-        // 加入声音
-        this.sound =  new Audio();
-        this.sound.src='./sound/shotgun.wav'
     }
     update(deltatime){
         //如果接触到游戏区域的顶部或者底部就反弹
@@ -83,6 +79,14 @@ class Raven{
                 this.frame++;
             }
             this.timeSinceFlap=0;
+            if(this.hasTrail){
+                for (let i = 0; i < 5; i++) {
+                    //给乌鸦加入拖尾
+                    particles.push(new Particle(this.x, this.y,this.width,this.color))
+                }
+
+            }
+
         }
         if(this.x<0-this.width){
             gameOver=true;
@@ -155,33 +159,47 @@ class Explosion{
         // ctx.restore();
     }
 }
-//
-// window.addEventListener('click',e=>{
-//     // console.log(e,ctx)
-//     // ctx.fillStyle = 'white';
-//     // //减去的数值是物体宽高的一半 保证物体中心出现在鼠标点击的位置
-//     // ctx.fillRect(e.x-canvasPosition.left-25,e.y-canvasPosition.top-25,50,50);
-//
-//     createAnimation(e);
-// })
-
-// window.addEventListener('mousemove',e=>{
-//     // console.log(e,ctx)
-//     // ctx.fillStyle = 'white';
-//     // //减去的数值是物体宽高的一半 保证物体中心出现在鼠标点击的位置
-//     // ctx.fillRect(e.x-canvasPosition.left-25,e.y-canvasPosition.top-25,50,50);
-//
-//     createAnimation(e);
-// })
-
-// function createAnimation(e){
-//     let positionX = e.x-canvasPosition.left;
-//     let positionY = e.y-canvasPosition.top;
-//     explosions.push(new Explosion(positionX,positionY));
-// }
 
 const raven = new Raven();
 
+//实现乌鸦后面的粒子拖尾效果
+let particles = [];
+class Particle{
+    constructor(x,y,size,color) {
+        this.size=size;
+        //粒子的位置
+        this.x=x +this.size/2 + Math.random() *50 -25;
+        this.y=y+this.size/3 + Math.random() *50 -25;
+
+        // 生成的粒子的半径
+        this.radius = Math.random() * this.size/10;
+        this.maxRadius = Math.random()*20+35;
+        //是否删除
+        this.markedForDeletion = false;
+        this.speedX = Math.random()*1+0.5;
+
+
+        this.color = color;
+    }
+    update(){
+        this.x+=this.speedX;
+        this.radius+=0.3;
+        //何时删除粒子
+        if(this.radius>this.maxRadius-5){
+            this.markedForDeletion=true;
+        }
+    }
+    draw(){
+        ctx.save();
+        //设置粒子透明度 根据这个算法粒子会从大到小慢慢变透明
+        ctx.globalAlpha = 1-this.radius/this.maxRadius;
+        ctx.beginPath();
+        ctx.fillStyle=this.color;
+        ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+    }
+}
 
 // 绘制分数方法
 function drawScore(){
@@ -214,7 +232,9 @@ window.addEventListener('click',e=>{
     ravens.forEach(item=>{
         //如果颜色相等
         if(item.randomColors[0]==pc[0]&&item.randomColors[1]==pc[1]&&item.randomColors[2]==pc[2]){
+            //乌鸦消失
            item.markedForDeletion=true;
+           //分数增加
            score++;
            //触发爆炸效果
             explosions.push(new Explosion(item.x,item.y,item.width));
@@ -237,31 +257,27 @@ function animate(timestamp){
         //给乌鸦排序 大的先渲染
         ravens.sort((a,b)=>a.width-b.width)
     }
+    //绘制分数
     drawScore();
-    [...ravens,...explosions].forEach(item=>{
+    [...particles,...ravens,...explosions].forEach(item=>{
         item.update(deltatime);
     });
-    [...ravens,...explosions].forEach(item=>{
+    [...particles,...ravens,...explosions].forEach(item=>{
         item.draw();
     })
     //删掉已经移出屏幕的乌鸦
     ravens = ravens.filter(item=>!item.markedForDeletion)
+
+    // 删除爆炸动画
     explosions = explosions.filter(item=>!item.markedForDeletion)
-    // console.log(deltatime);
-    // raven.update();
-    // raven.draw();
-    // for (let i = 0; i < explosions.length; i++) {
-    //     explosions[i].update();
-    //     explosions[i].draw();
-    //     //判断动画如果已经播放完就从数组中删除
-    //     if(explosions[i].frame>5){
-    //         explosions.splice(i,1);
-    //         i--;
-    //     }
-    // }
+    // 删除爆粒子动画
+    console.log(particles)
+    particles = particles.filter(item=>!item.markedForDeletion)
+   // 判断游戏是否结束
    if(!gameOver){
        requestAnimationFrame(animate);
    }else{
+       //触发游戏结束事件
         drawGameOver();
     }
 };

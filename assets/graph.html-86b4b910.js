@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-489103fa","path":"/skill/Graph/graph.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"图","slug":"图","link":"#图","children":[]}],"git":{"updatedTime":1699265069000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":3}]},"filePathRelative":"skill/Graph/graph.md"}');export{t as data};

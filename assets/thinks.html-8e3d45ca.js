@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-801f2bc4","path":"/life/thinks.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"胡思乱想","slug":"胡思乱想","link":"#胡思乱想","children":[]}],"git":{"updatedTime":1689834957000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"life/thinks.md"}');export{t as data};

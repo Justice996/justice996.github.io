@@ -1,0 +1,3 @@
+import{_ as e,o as a,c as s,d as n}from"./app-44e3f145.js";const c={},t=n(`<h3 id="树莓派常用命令" tabindex="-1"><a class="header-anchor" href="#树莓派常用命令" aria-hidden="true">#</a> 树莓派常用命令</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code> <span class="token comment"># 查看cpu温度</span>
+ <span class="token function">cat</span> /sys/class/thermal/thermal_zone0/temp
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),d=[t];function i(o,r){return a(),s("div",null,d)}const m=e(c,[["render",i],["__file","command.html.vue"]]);export{m as default};

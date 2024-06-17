@@ -417,7 +417,12 @@ export default defineUserConfig({
                     {
                         text: '<<傅雷家书>>节选',
                         link: '/read/FuLeisletter.md',
-                    }
+                    },
+                    {
+                        text: '<<少有人走的路>>节选',
+                        link: '/read/theRoadLessTraveled.md',
+                    },
+
                 ]
             },
             {

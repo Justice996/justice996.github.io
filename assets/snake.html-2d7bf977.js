@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6a1b4f52","path":"/snake.html","title":"贪吃蛇","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"贪吃蛇","layout":"Snake"},"headers":[],"git":{"updatedTime":1705890462000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":2}]},"filePathRelative":"snake.md"}');export{t as data};

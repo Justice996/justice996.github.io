@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2c48d599","path":"/life/question.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"一些好问题","slug":"一些好问题","link":"#一些好问题","children":[]}],"git":{"updatedTime":1722995746000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"life/question.md"}');export{e as data};

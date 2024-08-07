@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5b38a2f9","path":"/life/independent.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"论独立","slug":"论独立","link":"#论独立","children":[]}],"git":{"updatedTime":1718172714000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"life/independent.md"}');export{e as data};

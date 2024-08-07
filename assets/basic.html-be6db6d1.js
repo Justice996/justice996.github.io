@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5cfb734e","path":"/skill/php/basic.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"php基础","slug":"php基础","link":"#php基础","children":[]}],"git":{"updatedTime":1705311012000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":3}]},"filePathRelative":"skill/php/basic.md"}');export{e as data};

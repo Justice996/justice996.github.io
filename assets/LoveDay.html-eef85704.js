@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3f3586c9","path":"/life/LoveDay.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"2024520","slug":"_2024520","link":"#_2024520","children":[]}],"git":{"updatedTime":1716252931000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":2}]},"filePathRelative":"life/LoveDay.md"}');export{e as data};

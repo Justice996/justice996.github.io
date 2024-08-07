@@ -251,6 +251,16 @@ export default defineUserConfig({
                 collapsible: true,
                 children: [
                     {
+                        text: '红队',
+                        collapsible: true,
+                        children: [
+                            {
+                                text: '红队威胁情报',
+                                link: '/cyberSecurity/redTeam/RedTeamThreatIntel.md',
+                            }
+                        ]
+                    },
+                    {
                         text: '进攻性安全简介',
                         link: '/cyberSecurity/whatIsOffensiveSecurity.md',
                     },

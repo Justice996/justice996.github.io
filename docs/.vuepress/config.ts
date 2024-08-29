@@ -382,6 +382,10 @@ export default defineUserConfig({
                         text: '关于我',
                         link: '/life/aboutMe.md',
                     },
+                    {
+                        text: '如果失业了，我能做什么？',
+                        link: '/life/unemployment.md',
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

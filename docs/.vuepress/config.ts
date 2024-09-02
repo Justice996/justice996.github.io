@@ -386,6 +386,11 @@ export default defineUserConfig({
                         text: '如果失业了，我能做什么？',
                         link: '/life/unemployment.md',
                     },
+                    {
+                        text: '关于自己面对新知识/技能的一些思考',
+                        link: '/life/thinkMyself.md',
+                    },
+
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],

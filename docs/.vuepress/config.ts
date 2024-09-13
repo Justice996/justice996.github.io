@@ -390,7 +390,11 @@ export default defineUserConfig({
                         text: '关于自己面对新知识/技能的一些思考',
                         link: '/life/thinkMyself.md',
                     },
-
+                    // // twoTire.md
+                    {
+                        text: '卡车后轴为什么有两个轮胎？',
+                        link: '/life/twoTire.md',
+                    },
                     // 字符串 - 页面文件路径
                     // '/foo/bar.md',
                 ],
@@ -444,6 +448,7 @@ export default defineUserConfig({
                         text: '<<情商:为什么情商比智商更重要>>节选',
                         link: '/read/EmotionalIIntelligence.md',
                     },
+
 
 
                 ]

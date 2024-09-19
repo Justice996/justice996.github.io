@@ -422,6 +422,10 @@ export default defineUserConfig({
                 collapsible: true,
                 children: [
                     {
+                        text: '如何写读书笔记？',
+                        link: '/read/readNote.md',
+                    },
+                    {
                         text: '<<硅谷钢铁侠：埃隆·马斯克的冒险人生>>',
                         link: '/read/ElonReeveMuskBiography.md',
                     },

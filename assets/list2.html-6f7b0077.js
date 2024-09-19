@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d1b2ac86","path":"/english/list2.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"顽固单词","slug":"顽固单词","link":"#顽固单词","children":[]}],"git":{"updatedTime":1707013600000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":2}]},"filePathRelative":"english/list2.md"}');export{t as data};

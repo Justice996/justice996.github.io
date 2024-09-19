@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-286a8657","path":"/read/EmotionalIIntelligence.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1726111095000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"read/EmotionalIIntelligence.md"}');export{e as data};

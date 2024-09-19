@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-47d4da7e","path":"/skill/tree/tree.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"树","slug":"树","link":"#树","children":[]}],"git":{"updatedTime":1698368555000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":4}]},"filePathRelative":"skill/tree/tree.md"}');export{e as data};

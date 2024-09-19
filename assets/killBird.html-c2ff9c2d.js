@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1d635fa9","path":"/killBird.html","title":"杀死乌鸦","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"杀死乌鸦","layout":"Snake"},"headers":[],"git":{"updatedTime":1718343843000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"killBird.md"}');export{t as data};

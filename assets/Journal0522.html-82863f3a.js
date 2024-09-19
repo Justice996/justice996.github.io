@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-72e385d2","path":"/life/Journal0522.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"随笔0522","slug":"随笔0522","link":"#随笔0522","children":[]}],"git":{"updatedTime":1716370177000,"contributors":[{"name":"justice","email":"1393080039@qq.com","commits":1}]},"filePathRelative":"life/Journal0522.md"}');export{e as data};

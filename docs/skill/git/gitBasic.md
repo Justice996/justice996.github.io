@@ -14,11 +14,11 @@
 
 
 ### 多人协作的工作模式
-1. 首先，可以尝试用git push origin <branch-name>推送自己的修改；
-2. 如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+1. 首先，可以尝试用```git push origin <branch-name>```推送自己的修改；
+2. 如果推送失败，则因为远程分支比你的本地更新，需要先用`git pull`试图合并；
 3. 如果合并有冲突，则解决冲突，并在本地提交；
-4. 没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
-5. 如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令```git branch --set-upstream-to <branch-name> origin/<branch-name>```。
+4. 没有冲突或者解决掉冲突后，再用```git push origin <branch-name>```推送就能成功！
+5. 如果```git pull```提示`no tracking information`，则说明本地分支和远程分支的链接关系没有创建，用命令```git branch --set-upstream-to <branch-name> origin/<branch-name>```。
 
 
 ### 配置简略命令

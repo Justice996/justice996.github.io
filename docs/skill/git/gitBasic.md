@@ -1,7 +1,7 @@
 ## git的基本使用
 
 1. 将远程仓库克隆到本地
-  git clone https://gitee.com/用户个性地址/HelloGitee.git
+  ```git clone https://gitee.com/用户个性地址/HelloGitee.git```
 
 2. git config --global user.name "你的名字或昵称"
    git config --global user.email "你的邮箱"

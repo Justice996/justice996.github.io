@@ -247,6 +247,16 @@ export default defineUserConfig({
                 ]
             },
             {
+                text: 'ai回答问题',
+                collapsible: true,
+                children: [
+                    {
+                        text: '如何提高学习能力',
+                        link: '/aiQuestion/imporveStudy.md',
+                    },
+                ]
+            },
+            {
                 text: '网络安全',
                 collapsible: true,
                 children: [

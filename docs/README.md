@@ -1,5 +1,9 @@
 ---
 home: true
+bgImage: https://file.mo7.cc/api/public/bz
+heroText: 𝓜𝓻. Justice
+tagline: 我在感觉良好的状态下进行改变，效果最佳。
+heroFullScreen: true
 actions:
   - text: 进入首页 →
     link: /guide/
@@ -11,5 +15,5 @@ features:
   details: javascript、vue、typescript
 - title: 爱好
   details: 滑板、自行车、健身、徒步
-footer: By Justice | Copyright © 2024
+footer: By Justice | Copyright © 2025
 ---

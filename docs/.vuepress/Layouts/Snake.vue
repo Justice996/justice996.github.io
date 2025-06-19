@@ -1,21 +1,47 @@
 <template>
-    <Navbar/>
+  <div class="theme-container">
     <Content/>
-  </template>
-  
-  <script>
-  import { usePageData } from '@vuepress/client'
-  import Navbar from '@theme/Navbar.vue'
-  import { ref } from 'vue'
-  export default {
-    components: {
-      Navbar // 官方原生的header,可以直接拿来用
-    },
-    setup() {
+  </div>
+</template>
+
+<script>
+import { usePageData, Content } from 'vuepress/client'
+import { defineComponent, ref, onMounted } from 'vue'
+
+export default defineComponent({
+  components: {
+    Content
+  },
+  setup() {
+    const isDarkMode = ref(false)
+    
+    onMounted(() => {
+      const html = document.documentElement
+      isDarkMode.value = html.classList.contains("dark")
+      
+      // 监听主题变化
+      const observer = new MutationObserver(() => {
+        isDarkMode.value = html.classList.contains("dark")
+      })
+      
+      observer.observe(html, {
+        attributeFilter: ["class"],
+        attributes: true,
+      })
+      
+      return () => {
+        observer.disconnect()
+      }
+    })
+    
+    return {
+      isDarkMode
     }
   }
-  </script>
-  <style lang="scss" scoped>
+})
+</script>
+
+<style lang="scss" scoped>
   
-  </style>
+</style>
   

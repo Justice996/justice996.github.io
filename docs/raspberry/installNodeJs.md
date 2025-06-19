@@ -1,5 +1,6 @@
-### 树莓派4B安装nodejs
-
+---
+title: 树莓派4B安装nodejs
+---
 1. `curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -`   # 10.x是版本号可以改成你想安装的
 2. `sudo apt install nodejs`
 3. `nodejs` -v  # 大坑我安装的是20版本的node不知道为什么使用node不能运行 要使用nodejs

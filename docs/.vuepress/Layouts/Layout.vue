@@ -1,34 +1,19 @@
-<script setup lang="ts">
-import { onUnmounted, onMounted, ref } from "vue";
-import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
-
-const isDarkMode = ref(false);
-
-onMounted(() => {
-  const html = document.documentElement;
-
-  isDarkMode.value = html.classList.contains("dark");
-
-  // watch theme change
-  const observer = new MutationObserver(() => {
-    isDarkMode.value = html.classList.contains("dark");
-  });
-
-  observer.observe(html, {
-    attributeFilter: ["class"],
-    attributes: true,
-  });
-
-  onUnmounted(() => {
-    observer.disconnect();
-  });
-});
+<script setup>
+import { Navbar, Sidebar, Content } from 'vuepress-theme-hope/client'
 </script>
 
 <template>
-  <ParentLayout>
-    <template #page-bottom>
-      <CommentService :darkmode="isDarkMode" />
-    </template>
-  </ParentLayout>
+  <div class="theme-container">
+    <Navbar />
+    <div class="theme-content">
+      <Content />
+    </div>
+  </div>
 </template>
+
+<style>
+.theme-container {
+  padding-top: 3.6rem;
+  min-height: 100vh;
+}
+</style>

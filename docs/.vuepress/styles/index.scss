@@ -1,0 +1,48 @@
+/* 友情链接页面样式 */
+.list {
+  margin-top: 90px;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.list h3 {
+  text-align: center;
+}
+
+.list ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.list li {
+  width: 100%;
+  max-width: 450px;
+  height: 100px;
+  border: 1px solid var(--c-border);
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.2)!important;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+.list li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.list li img:hover {
+  transform: rotate(666turn);
+  transition: all 59s cubic-bezier(.34,0,.84,1) 1s;
+}
+
+.list li a {
+  margin-left: 20px;
+  color: var(--c-text);
+} 

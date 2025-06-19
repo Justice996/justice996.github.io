@@ -4,9 +4,6 @@ import { defineUserConfig } from 'vuepress'
 import { hopeTheme } from "vuepress-theme-hope";
 import { getDirname, path } from "vuepress/utils";
 // @ts-ignore
-// import { docsearchPlugin } from 'vuepress/plugin-docsearch'
-// import { commentPlugin } from "vuepress-plugin-comment2";
-
 import { viteBundler } from '@vuepress/bundler-vite'
 // import { defineUserConfig } from 'vuepress'
 const __dirname = getDirname(import.meta.url);
@@ -71,15 +68,6 @@ export default defineUserConfig({
                 indexName: 'justice996io',
             }
           },
-        // notFound: [
-        //     '这里什么都没有',
-        //     '我们怎么到这来了？',
-        //     '这是一个 404 页面',
-        //     '看起来我们进入了错误的链接',
-        // ],
-        // backToHome: '返回首页',
-        // lastUpdatedText: '上次更新',
-        // contributorsText: '贡献者',
     }),
 
 })

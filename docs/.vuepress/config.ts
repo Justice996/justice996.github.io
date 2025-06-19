@@ -26,26 +26,27 @@ export default defineUserConfig({
         // 全局禁用编辑链接
         editLink: false,
         // 确保导航栏显示
-        navbar: [
-            {
-                text: '友情链接',
-                link: '/friends.md',
-            },
-            {
-                text: '贪吃蛇',
-                link: '/snake.md',
-            },
-            {
-                text: '今天吃什么',
-                link: '/howtoeat.md',
-            },
-        ],
+        // navbar: [
+        //     {
+        //         text: '友情链接',
+        //         link: '/friends.md',
+        //     },
+        //     {
+        //         text: '贪吃蛇',
+        //         link: '/snake.md',
+        //     },
+        //     {
+        //         text: '今天吃什么',
+        //         link: '/howtoeat.md',
+        //     },
+        // ],
+        navbar:[],
         // 明确设置导航栏显示
-        navbarLayout: {
-            start: ["Brand"],
-            center: ["Links"],
-            end: ["Search", "Outlook", "Repo"],
-        },
+        // navbarLayout: {
+        //     start: ["Brand"],
+        //     center: ["Links"],
+        //     end: ["Search", "Outlook", "Repo"],
+        // },
         sidebar: sidebar,
         markdown: {
             component: true,

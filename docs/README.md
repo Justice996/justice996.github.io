@@ -1,6 +1,6 @@
 ---
 home: true
-bgImage: https://file.mo7.cc/api/public/bz
+bgImage: ./bgImg/bg.png
 heroText: 𝓜𝓻. Justice
 tagline: 我在感觉良好的状态下进行改变，效果最佳。
 heroFullScreen: true

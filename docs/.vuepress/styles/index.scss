@@ -45,4 +45,16 @@
 .list li a {
   margin-left: 20px;
   color: var(--c-text);
+}
+
+/* 导航栏样式 */
+.theme-container .vp-navbar {
+  backdrop-filter: blur(10px) !important;
+  background: rgba(202, 212, 230, 0.5) !important;
+  border-bottom: 1px solid rgba(202, 212, 230, 0.1) !important;
+}
+
+/* 暗黑模式下的导航栏样式 */
+html.dark .theme-container .vp-navbar {
+  background: rgba(202, 212, 230, 0.5) !important;
 } 

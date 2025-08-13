@@ -409,6 +409,9 @@ export const sidebar = [
             },{
                 text: '<<情商:为什么情商比智商更重要>>节选',
                 link: '/read/EmotionalIIntelligence.md',
+            },{
+                text: '<<人的自我寻求>>读书笔记',
+                link: '/read/manself.md',
             },
 
 

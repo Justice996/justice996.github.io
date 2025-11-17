@@ -22,7 +22,7 @@ export default defineUserConfig({
         vuePluginOptions: {},
       }),
     theme: hopeTheme({
-        hostname: 'https://github.com/Justice996',
+        hostname: 'https://justice996.github.io/',
         // 全局禁用编辑链接
         editLink: false,
         // 确保导航栏显示

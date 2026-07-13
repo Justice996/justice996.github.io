@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://justice996.github.io/sitemap.xml

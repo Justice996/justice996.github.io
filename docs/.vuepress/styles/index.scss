@@ -57,4 +57,17 @@
 /* 暗黑模式下的导航栏样式 */
 html.dark .theme-container .vp-navbar {
   background: rgba(202, 212, 230, 0.5) !important;
+}
+
+/* 导航栏链接字体样式 */
+.vp-navbar .auto-link {
+ font-family: consolas, monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.vp-navbar .auto-link:hover {
+  color: var(--vp-c-accent);
 } 

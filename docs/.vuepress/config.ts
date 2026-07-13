@@ -42,11 +42,11 @@ export default defineUserConfig({
         ],
         // navbar:[],
         // 明确设置导航栏显示
-        // navbarLayout: {
-        //     start: ["Brand"],
-        //     center: ["Links"],
-        //     end: ["Search", "Outlook", "Repo"],
-        // },
+        navbarLayout: {
+            start: ["Brand"],
+            center: [],
+            end: ["Links", "Search", "Outlook", "Repo"],
+        },
         sidebar: sidebar,
         markdown: {
             component: true,

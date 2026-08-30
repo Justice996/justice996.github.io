@@ -59,6 +59,10 @@ export const sidebar = [
                         link: '/skill/recursive/recursive.md',
                     },
                     {
+                        text: '递归学习日志',
+                        link: '/skill/recursive/recursiveLog.md',
+                    },
+                    {
                         text: '树',
                         link: '/skill/tree/tree.md',
                     },
@@ -144,6 +148,16 @@ export const sidebar = [
                     {
                         text: 'php基础',
                         link: '/skill/php/basic.md',
+                        children: [],
+                    },
+                ],
+            },
+            {
+                text: 'Java',
+                children: [
+                    {
+                        text: 'Java学习日志',
+                        link: '/skill/java/javaLog.md',
                         children: [],
                     },
                 ],

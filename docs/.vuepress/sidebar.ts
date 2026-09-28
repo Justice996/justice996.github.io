@@ -160,6 +160,16 @@ export const sidebar = [
                         link: '/skill/java/javaLog.md',
                         children: [],
                     },
+                    {
+                        text: '复习笔记（上）：语言基础与 Spring 核心',
+                        link: '/skill/java/javaBackend01.md',
+                        children: [],
+                    },
+                    {
+                        text: '复习笔记（下）：数据层、事务与分布式一致性',
+                        link: '/skill/java/javaBackend02.md',
+                        children: [],
+                    },
                 ],
             },
             {

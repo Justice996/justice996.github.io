@@ -70,4 +70,11 @@ html.dark .theme-container .vp-navbar {
 
 .vp-navbar .auto-link:hover {
   color: var(--vp-c-accent);
-} 
+}
+
+/* 提示词页面：代码块内长行自动换行，便于窄屏阅读；复制出来的文本不受影响 */
+.prompt-page div[class*="language-"] pre,
+.prompt-page div[class*="language-"] pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

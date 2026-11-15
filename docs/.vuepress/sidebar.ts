@@ -199,6 +199,22 @@ export const sidebar = [
         ],
     },
     {
+        text: 'vibecoding提示词合集',
+        collapsible: true,
+        children: [
+            {
+                text: '测试',
+                collapsible: true,
+                children: [
+                    {
+                        text: 'Java 项目测试工程师提示词',
+                        link: '/vibecoding/testing/javaTestingPrompt.md',
+                    },
+                ],
+            },
+        ],
+    },
+    {
       text:'windows相关',
       collapsible: true,
       children: [
